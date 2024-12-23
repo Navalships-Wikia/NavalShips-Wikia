@@ -5,227 +5,245 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IJN Battleship Nagato</title>
     <style>
-        /* Styles for ship-specific tables */
-        .table-container {
-            display: block; /* Ensures tables stack vertically */
-            margin-bottom: 20px; /* Adds spacing between ship tables */
-        }
-        table.ship-table {
-            width: 35%; /* Set the width of ship tables */
-            border-collapse: collapse; /* Removes gaps between table borders */
-            margin-bottom: 20px; /* Adds space below each table */
-        }
-        table.ship-table th, table.ship-table td {
-            border: 1px solid black; /* Adds borders to ship tables */
-            padding: 8px;
-            text-align: left; /* Left-aligns text in cells */
+        /* Main container for history and tables */
+        .content-container {
+            display: grid;
+            grid-template-columns: 1fr 2fr; /* Adjusted for better width distribution */
+            gap: 20px;
+            margin: 20px;
         }
 
-        /* General styles for page-wide alignment tables */
-        table.page-wide {
-            width: 100%; /* Makes page-wide tables span the entire page */
-            border: none; /* No borders for alignment tables */
+        /* Style for the brief history section */
+        .history-section {
+            padding-right: 20px;
         }
-        table.page-wide td {
-            text-align: center; /* Centers text for alignment tables */
+
+        /* Tables Section */
+        .table-container {
+            width: 60%;
+            margin-bottom: 20px; /* Add margin between tables */
+        }
+
+        table.ship-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table.ship-table th, table.ship-table td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        /* Responsive design for mobile devices */
+        @media screen and (max-width: 768px) {
+            .content-container {
+                grid-template-columns: 1fr; /* Stack content vertically on small screens */
+            }
+
+            .history-section {
+                padding-right: 0;
+                margin-bottom: 20px; /* Add space below history section */
+            }
+
+            .table-container {
+                width: 100%;
+            }
         }
     </style>
 </head>
+
 <body>
-    <!-- Logo and Navigation -->
-    <table align="center">
+    <table align="center" class="nav-table">
         <tr>
             <td><img src="../../img/NavalShips Wikia Logo.png" width="500" height="99" alt="NavalShip Wikia Logo"></td>
         </tr>
     </table>
 
-    <pre style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 32; text-align: center;"><b>NavalShips Wikia</b></pre>
+    <h1 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 32px; text-align: center;"><b>NavalShips Wikia</b></h1>
 
-    <!-- Navigation links -->
-    <table class="page-wide">
+    <table width="100%" class="nav-table">
         <tr>
             <td><a href="../../index.html">Home Page</a></td>
             <td><a href="../../website pages/fleetlist.html">List of Fleets</a></td>
-            <td><a href="../../website pages/shiptypelist.html">List by Ship Type</a></td>
+            <td><a href="../../website pages/shiptypelist.html">List by ship Type</a></td>
             <td><a href="../../website pages/contactme.html">Contact Me</a></td>
         </tr>
     </table>
 
     <section style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
-        <h1 style="font-size: 32; text-align: center;">IJN Battleship Nagato</h1>
+        <h1 style="font-size: 32px; text-align: center;">IJN Battleship Nagato</h1>
 
-        <!-- Ship History Table -->
-        <div class="table-container">
-            <table align="right" class="ship-table">
-                <tr>
-                    <th colspan="2">History</th>
-                </tr>
-                <tr>
-                    <td>Ship Name&emsp;</td>
-                    <td>Nagato (after the Nagato Province)</td>
-                </tr>
-                <tr>
-                    <td>Shipyard Builder&emsp;</td>
-                    <td>Kure Naval Arsenal</td>
-                </tr>
-                <tr>
-                    <td>Laid Down&emsp;</td>
-                    <td>August 28, 1917</td>
-                </tr>
-                <tr>
-                    <td>Completed&emsp;</td>
-                    <td>November 15, 1920</td>
-                </tr>
-                <tr>
-                    <td>Commissioned&emsp;</td>
-                    <td>November 25, 1920</td>
-                </tr>
-                <tr>
-                    <td>Sunken&emsp;</td>
-                    <td>September 15, 1945</td>
-                </tr>
-                <tr>
-                    <td>Fate&emsp;</td>
-                    <td>Sunken as result of Nuclear Trials during Operation Crossroads</td>
-                </tr>
-            </table>
-        </div> 
+        <div class="content-container">
+            <!-- Brief History Section on the Left -->
+            <div class="history-section">
+                <h2>Brief History Summary</h2>
+                <p>The IJN Nagato is a Super-Dreadnought classed battleship built for the Japanese Navy in 1920. She was designed to be the leading ship of her class. She participated in several conflicts such as the Second Sino-Japanese War in 1937 and also served as Admiral Isoroku Yamamoto's Flagship during the Attack on Pearl Harbor. Later in her life, from 1934-1936 she was modernized with several improvements to armor and a rebuild of her superstructure.</p>
 
-        <!-- Initial Technical Specifics Table -->
-        <div class="table-container">
-            <table align="right" class="ship-table">
-                <tr>
-                    <th colspan="2">Initial Technical Specifics</th>
-                </tr>
-                <tr>
-                    <td>Class + Type&emsp;</td>
-                    <td>Nagato Class Battleship</td>
-                </tr>
-                <tr>
-                    <td>Displacement&emsp;</td>
-                    <td>32,720 metric tons (32,200 long tons)</td>
-                </tr>
-                <tr>
-                    <td>Length&emsp;</td>
-                    <td>215.8 m (708 ft)</td>
-                </tr>
-                <tr>
-                    <td>Beam&emsp;</td>
-                    <td>29.02 m (95 ft 3 in)</td>
-                </tr>
-                <tr>
-                    <td>Draft&emsp;</td>
-                    <td>9.08 m (29 ft 9 in)</td>
-                </tr>
-                <tr>
-                    <td>Installed Power&emsp;</td>
-                    <td>21 x Kampon Water-tube Boilers</td>
-                </tr>
-                <tr>
-                    <td>Propulsion&emsp;</td>
-                    <td>4 x Gihon geared Steam Turbines</td>
-                </tr>
-                <tr>
-                    <td>Speed&emsp;</td>
-                    <td>26.5 knots (49.1 km/h; 30.5 mph)</td>
-                </tr>
-                <tr>
-                    <td>Range&emsp;</td>
-                    <td>5,500 nmi @ 16 knots (10,200 km @ 30 km/h)</td>
-                </tr>
-                <tr>
-                    <td>Crew Complement&emsp;</td>
-                    <td>1,333 Sailors</td>
-                </tr>
-                <tr>
-                    <td>Armament&emsp;</td>
-                    <td>4 x Twin Mount 41 cm (16 in) Guns<br>20 x Single Mount 14 cm (5.5 in) Guns<br>4 x Single Mount 76 mm (3 in) AA Guns<br>8 x 533 mm (21 in) Torpedo Tubes</td>
-                </tr>
-                <tr>
-                    <td>Armour&emsp;</td>
-                    <td>Waterline Belt: 100-305 mm (3.9-12.0 in)<br>Deck: 69mm (2.7 in) + 75 mm (3 in)<br>Gun Turrets: 190-356 mm (7.5-14.0 in)<br>Barbettes: 305 mm (12.0 in)<br>Conning Tower: 369 (14.5 in)</td>
-                </tr>
-            </table>
-        </div>   
+                <p>She spent most of her time in the Pacific War training in Japan's territorial waters. She only saw combat starting in 1944 with the Battle of the Philippine Sea when she was attacked by American aircraft. At the end of World War 2, she was the only Japanese Capital Battleship to have survived, even though there was an American campaign to destroy the IJN's remaining capital ships. She went on to serve as a target in nuclear trials during Operation Crossroads. She was sunk during the second trial.</p>
+            </div>
 
-        <!-- 1944 Technical Specifics Table -->
-        <div class="table-container">
-            <table align="right" class="ship-table">
-                <tr>
-                    <th colspan="2">1944 Technical Specifics</th>
-                </tr>
-                <tr>
-                    <td>Class + Type&emsp;</td>
-                    <td>Nagato Class Battleship</td>
-                </tr>
-                <tr>
-                    <td>Displacement&emsp;</td>
-                    <td>39,130 metric tons (38,510 long tons)</td>
-                </tr>
-                <tr>
-                    <td>Length&emsp;</td>
-                    <td>224.94 m (738 ft)</td>
-                </tr>
-                <tr>
-                    <td>Beam&emsp;</td>
-                    <td>34.6 m (113 ft 6 in)</td>
-                </tr>
-                <tr>
-                    <td>Draft&emsp;</td>
-                    <td>9.49 m (31 ft 2 in)</td>
-                </tr>
-                <tr>
-                    <td>Installed Power&emsp;</td>
-                    <td>10 x Kampon Water-tube Boilers</td>
-                </tr>
-                <tr>
-                    <td>Propulsion&emsp;</td>
-                    <td>4 x Gihon geared Steam Turbines</td>
-                </tr>
-                <tr>
-                    <td>Speed&emsp;</td>
-                    <td>25 knots (46 km/h; 29 mph)</td>
-                </tr>
-                <tr>
-                    <td>Range&emsp;</td>
-                    <td>8,650 nmi @ 16 knots (16,020 km @ 30 km/h)</td>
-                </tr>
-                <tr>
-                    <td>Crew Complement&emsp;</td>
-                    <td>1,734 Sailors</td>
-                </tr>
-                <tr>
-                    <td>Sensors and Processing Systems&emsp;</td>
-                    <td>1 x Type 21 Air Search Radar<br>2 x Type 13 Early Warning Radars<br>2 x Type 22 Surface Search Radars</td>
-                </tr>
-                <tr>
-                    <td>Armament&emsp;</td>
-                    <td>4 x Twin Mount 41 cm (16 in) Guns<br>18 x Single Mount 14 cm (5.5 in) Guns<br>4 x Twin Mount 127 mm (5 in) DP Guns<br>98 x 25 mm (1 in) AA Guns</td>
-                </tr>
-                <tr>
-                    <td>Armour&emsp;</td>
-                    <td>Waterline Belt: 100-305 mm (3.9-12.0 in)<br>Deck: 69mm (2.7 in) + 100 mm (3.9 in) + 38 mm (1.5 in)<br>Gun Turrets: 280-460 mm (11.0-18.1 in)<br>Barbettes: 457 mm (18.0 in)<br>Conning Tower: 369 (14.5 in)</td>
-                </tr>
-                <tr>
-                    <td>Aircraft Complement&emsp;</td>
-                    <td>3 x Mitsubishi F1M Biplanes</td>
-                </tr>
-                <tr>
-                    <td>Miscellaneous&emsp;</td>
-                    <td>1 x Aircraft Catapult</td>
-                </tr>
-            </table>
+            <!-- Tables Section on the Right (Stacked) -->
+            <div class="table-container">
+                <table class="ship-table">
+                    <tr>
+                        <th colspan="2">History</th>
+                    </tr>
+                    <tr>
+                        <td>Ship Name</td>
+                        <td>Nagato (after the Nagato Province)</td>
+                    </tr>
+                    <tr>
+                        <td>Shipyard Builder</td>
+                        <td>Kure Naval Arsenal</td>
+                    </tr>
+                    <tr>
+                        <td>Laid Down</td>
+                        <td>August 28, 1917</td>
+                    </tr>
+                    <tr>
+                        <td>Completed</td>
+                        <td>November 15, 1920</td>
+                    </tr>
+                    <tr>
+                        <td>Commissioned</td>
+                        <td>November 25, 1920</td>
+                    </tr>
+                    <tr>
+                        <td>Sunken</td>
+                        <td>September 15, 1945</td>
+                    </tr>
+                    <tr>
+                        <td>Fate</td>
+                        <td>Sunken as result of Nuclear Trials during Operation Crossroads</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="table-container">
+                <table class="ship-table">
+                    <tr>
+                        <th colspan="2">Initial Technical Specifics</th>
+                    </tr>
+                    <tr>
+                        <td>Class + Type</td>
+                        <td>Nagato Class Battleship</td>
+                    </tr>
+                    <tr>
+                        <td>Displacement</td>
+                        <td>32,720 metric tons (32,200 long tons)</td>
+                    </tr>
+                    <tr>
+                        <td>Length</td>
+                        <td>215.8 m (708 ft)</td>
+                    </tr>
+                    <tr>
+                        <td>Beam</td>
+                        <td>29.02 m (95 ft 3 in)</td>
+                    </tr>
+                    <tr>
+                        <td>Draft</td>
+                        <td>9.08 m (29 ft 9 in)</td>
+                    </tr>
+                    <tr>
+                        <td>Installed Power</td>
+                        <td>21 x Kampon Water-tube Boilers</td>
+                    </tr>
+                    <tr>
+                        <td>Propulsion</td>
+                        <td>4 x Gihon geared Steam Turbines</td>
+                    </tr>
+                    <tr>
+                        <td>Speed</td>
+                        <td>26.5 knots (49.1 km/h; 30.5 mph)</td>
+                    </tr>
+                    <tr>
+                        <td>Range</td>
+                        <td>5,500 nmi @ 16 knots (10,200 km @ 30 km/h)</td>
+                    </tr>
+                    <tr>
+                        <td>Crew Complement</td>
+                        <td>1,333 Sailors</td>
+                    </tr>
+                    <tr>
+                        <td>Armament</td>
+                        <td>4 x Twin Mount 41 cm (16 in) Guns<br>20 x Single Mount 14 cm (5.5 in) Guns<br>4 x Single Mount 76 mm (3 in) AA Guns<br>8 x 533 mm (21 in) Torpedo Tubes</td>
+                    </tr>
+                    <tr>
+                        <td>Armour</td>
+                        <td>Waterline Belt: 100-305 mm (3.9-12.0 in)<br>Deck: 69mm (2.7 in) + 75 mm (3 in)<br>Gun Turrets: 190-356 mm (7.5-14.0 in)<br>Barbettes: 305 mm (12.0 in)<br>Conning Tower: 369 (14.5 in)</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="table-container">
+                <table class="ship-table">
+                    <tr>
+                        <th colspan="2">1944 Technical Specifics</th>
+                    </tr>
+                    <tr>
+                        <td>Class + Type</td>
+                        <td>Nagato Class Battleship</td>
+                    </tr>
+                    <tr>
+                        <td>Displacement</td>
+                        <td>39,130 metric tons (38,510 long tons)</td>
+                    </tr>
+                    <tr>
+                        <td>Length</td>
+                        <td>224.94 m (738 ft)</td>
+                    </tr>
+                    <tr>
+                        <td>Beam</td>
+                        <td>34.6 m (113 ft 6 in)</td>
+                    </tr>
+                    <tr>
+                        <td>Draft</td>
+                        <td>9.49 m (31 ft 2 in)</td>
+                    </tr>
+                    <tr>
+                        <td>Installed Power</td>
+                        <td>10 x Kampon Water-tube Boilers</td>
+                    </tr>
+                    <tr>
+                        <td>Propulsion</td>
+                        <td>4 x Gihon geared Steam Turbines</td>
+                    </tr>
+                    <tr>
+                        <td>Speed</td>
+                        <td>25 knots (46 km/h; 29 mph)</td>
+                    </tr>
+                    <tr>
+                        <td>Range</td>
+                        <td>8,650 nmi @ 16 knots (16,020 km @ 30 km/h)</td>
+                    </tr>
+                    <tr>
+                        <td>Crew Complement</td>
+                        <td>1,734 Sailors</td>
+                    </tr>
+                    <tr>
+                        <td>Sensors and Processing Systems</td>
+                        <td>1 x Type 21 Air Search Radar<br>2 x Type 13 Early Warning Radars<br>2 x Type 22 Surface Search Radars</td>
+                    </tr>
+                    <tr>
+                        <td>Armament</td>
+                        <td>4 x Twin Mount 41 cm (16 in) Guns<br>18 x Single Mount 14 cm (5.5 in) Guns<br>4 x Twin Mount 127 mm (5 in) DP Guns<br>98 x 25 mm (1 in) AA Guns</td>
+                    </tr>
+                    <tr>
+                        <td>Armour</td>
+                        <td>Waterline Belt: 100-305 mm (3.9-12.0 in)<br>Deck: 69mm (2.7 in) + 100 mm (3.9 in) + 38 mm (1.5 in)<br>Gun Turrets: 280-460 mm (11.0-18.1 in)<br>Barbettes: 457 mm (18.0 in)<br>Conning Tower: 369 (14.5 in)</td>
+                    </tr>
+                    <tr>
+                        <td>Aircraft Complement</td>
+                        <td>3 x Mitsubishi F1M Biplanes</td>
+                    </tr>
+                    <tr>
+                        <td>Miscellaneous</td>
+                        <td>1 x Aircraft Catapult</td>
+                    </tr>
+                </table>
+            </div>
         </div>
-
-        <br>
-    </section>
-
-    <!-- Brief History Section -->
-    <section style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
-        <h2>Brief History Summary</h2>
-        <p>The IJN Nagato is a Super-Dreadnought classed battleship built for the Japanese Navy in 1920. She was designed to be the leading ship of her class. She participated in several conflicts such as the Second Sino-Japanese War in 1937 and also served as Admiral Isoroku Yamamoto's Flagship during the Attack on Pearl Harbor. Later in her life, from 1934-1936 she was modernized with several improvements to armor and a rebuild of her superstructure.</p>
-
-        <p>She spent most of her time in the Pacific War training in Japan's territorial waters. She only saw combat starting in 1944 with the Battle of the Philippine Sea when she was attacked by American aircraft. At the end of World War 2, she was the only Japanese Capital Battleship to have survived, even though there was an American campaign to destroy the IJN's remaining capital ships. She went on to serve as a target in nuclear trials during Operation Crossroads. She was sunk during the second trial.</p>
     </section>
 </body>
 </html>
