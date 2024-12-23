@@ -1,32 +1,72 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IJN Battleship Nagato</title>
+    <style>
+        /* Styles for ship-specific tables */
+        .table-container {
+            display: block; /* Ensures tables stack vertically */
+            margin-bottom: 20px; /* Adds spacing between ship tables */
+        }
+        table.ship-table {
+            width: 35%; /* Set the width of ship tables */
+            border-collapse: collapse; /* Removes gaps between table borders */
+            margin-bottom: 20px; /* Adds space below each table */
+        }
+        table.ship-table th, table.ship-table td {
+            border: 1px solid black; /* Adds borders to ship tables */
+            padding: 8px;
+            text-align: left; /* Left-aligns text in cells */
+        }
 
-<table align="center">
-    <td><img src="../../img/NavalShips Wikia Logo.png" width="500" height="99" alt="NavalShip Wikia Logo"></td>
-</table>
+        /* General styles for page-wide alignment tables */
+        table.page-wide {
+            width: 100%; /* Makes page-wide tables span the entire page */
+            border: none; /* No borders for alignment tables */
+        }
+        table.page-wide td {
+            text-align: center; /* Centers text for alignment tables */
+        }
+    </style>
+</head>
+<body>
+    <!-- Logo and Navigation -->
+    <table align="center">
+        <tr>
+            <td><img src="../../img/NavalShips Wikia Logo.png" width="500" height="99" alt="NavalShip Wikia Logo"></td>
+        </tr>
+    </table>
 
-<pre style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 32; text-align: center;"><b>NavalShips Wikia</b></pre>
+    <pre style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 32; text-align: center;"><b>NavalShips Wikia</b></pre>
 
-<Table width="100%" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; text-align: center;">
-    <td><a href="../../index.html">Home Page</a></td>
-    <td><a href="../../website pages/fleetlist.html">List of Fleets</a></td>
-    <td><a href="../../website pages/shiptypelist.html">List by ship Type</a></td>
-    <td><a href="../../website pages/contactme.html">Contact Me</a></td>
-</Table>
+    <!-- Navigation links -->
+    <table class="page-wide">
+        <tr>
+            <td><a href="../../index.html">Home Page</a></td>
+            <td><a href="../../website pages/fleetlist.html">List of Fleets</a></td>
+            <td><a href="../../website pages/shiptypelist.html">List by Ship Type</a></td>
+            <td><a href="../../website pages/contactme.html">Contact Me</a></td>
+        </tr>
+    </table>
 
-<section style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
-    <h1 style="font-size: 32; text-align: center;">IJN Battleship Nagato</h1>
-    
-    <h2>Technical Specifications</h2>
-    <h3>History</h3>
-        <p>
-            <table width="75%" align="right">
+    <section style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+        <h1 style="font-size: 32; text-align: center;">IJN Battleship Nagato</h1>
+
+        <!-- Ship History Table -->
+        <div class="table-container">
+            <table align="right" class="ship-table">
+                <tr>
+                    <th colspan="2">History</th>
+                </tr>
                 <tr>
                     <td>Ship Name&emsp;</td>
                     <td>Nagato (after the Nagato Province)</td>
                 </tr>
                 <tr>
                     <td>Shipyard Builder&emsp;</td>
-                    <td>Kure Naval Aresenal</td>
+                    <td>Kure Naval Arsenal</td>
                 </tr>
                 <tr>
                     <td>Laid Down&emsp;</td>
@@ -49,16 +89,20 @@
                     <td>Sunken as result of Nuclear Trials during Operation Crossroads</td>
                 </tr>
             </table>
-        </p>
-    <h3>Inital Technical Specs</h3>
-        <p>
-            <table width="75%" align="right">
+        </div> 
+
+        <!-- Initial Technical Specifics Table -->
+        <div class="table-container">
+            <table align="right" class="ship-table">
+                <tr>
+                    <th colspan="2">Initial Technical Specifics</th>
+                </tr>
                 <tr>
                     <td>Class + Type&emsp;</td>
                     <td>Nagato Class Battleship</td>
                 </tr>
                 <tr>
-                    <td>Dispacement&emsp;</td>
+                    <td>Displacement&emsp;</td>
                     <td>32,720 metric tons (32,200 long tons)</td>
                 </tr>
                 <tr>
@@ -101,20 +145,21 @@
                     <td>Armour&emsp;</td>
                     <td>Waterline Belt: 100-305 mm (3.9-12.0 in)<br>Deck: 69mm (2.7 in) + 75 mm (3 in)<br>Gun Turrets: 190-356 mm (7.5-14.0 in)<br>Barbettes: 305 mm (12.0 in)<br>Conning Tower: 369 (14.5 in)</td>
                 </tr>
-
-
             </table>
-        </p>
-    
-    <h3>1944 Technical Specs</h3>
-        <p>
-            <table width="75%" align="right">
+        </div>   
+
+        <!-- 1944 Technical Specifics Table -->
+        <div class="table-container">
+            <table align="right" class="ship-table">
+                <tr>
+                    <th colspan="2">1944 Technical Specifics</th>
+                </tr>
                 <tr>
                     <td>Class + Type&emsp;</td>
                     <td>Nagato Class Battleship</td>
                 </tr>
                 <tr>
-                    <td>Dispacement&emsp;</td>
+                    <td>Displacement&emsp;</td>
                     <td>39,130 metric tons (38,510 long tons)</td>
                 </tr>
                 <tr>
@@ -151,7 +196,7 @@
                 </tr>
                 <tr>
                     <td>Sensors and Processing Systems&emsp;</td>
-                    <td>1 x Type 21 Air Search Radar<br>2 x Type 13 Early Warning Radars<br> 2 x Type 22 Surface Search Radars</td>
+                    <td>1 x Type 21 Air Search Radar<br>2 x Type 13 Early Warning Radars<br>2 x Type 22 Surface Search Radars</td>
                 </tr>
                 <tr>
                     <td>Armament&emsp;</td>
@@ -169,13 +214,18 @@
                     <td>Miscellaneous&emsp;</td>
                     <td>1 x Aircraft Catapult</td>
                 </tr>
-
-
             </table>
-        </p>
-<br>
-    <h2>Brief History Summary</h2>
-        <p>The IJN Nagato is a Super-Dreadnought classed battleship built for the Japanese Navy in 1920. She was designed to be the leading ship of her class. She participate in several conflicts such as the second Sino-Japanese War in 1937 and also served as Admiral Isoroku Yamamoto's Flagship during the Attack on Pearl Harbor. Later in her life, from 1934-1936 she was modernized with several improvments to armour and a rebuild of her superstructure.</p>
+        </div>
 
-        <p>She spent most of her time in the Pacific War training in Japan's territorial waters. She only saw combat starting in 1944 with the Battle of the Philippine Sea when she was attacked by American aircraft. At the end of World War 2 she was the only Japanese Capital Battleship to have survived even though there was an American campaign to destory the IJNs remaining capital ships. She went on to serve as a target in nuclear trials during Operation Crossroads. She was sunk during the second trial.</p>
-</section>
+        <br>
+    </section>
+
+    <!-- Brief History Section -->
+    <section>
+        <h2>Brief History Summary</h2>
+        <p>The IJN Nagato is a Super-Dreadnought classed battleship built for the Japanese Navy in 1920. She was designed to be the leading ship of her class. She participated in several conflicts such as the Second Sino-Japanese War in 1937 and also served as Admiral Isoroku Yamamoto's Flagship during the Attack on Pearl Harbor. Later in her life, from 1934-1936 she was modernized with several improvements to armor and a rebuild of her superstructure.</p>
+
+        <p>She spent most of her time in the Pacific War training in Japan's territorial waters. She only saw combat starting in 1944 with the Battle of the Philippine Sea when she was attacked by American aircraft. At the end of World War 2, she was the only Japanese Capital Battleship to have survived, even though there was an American campaign to destroy the IJN's remaining capital ships. She went on to serve as a target in nuclear trials during Operation Crossroads. She was sunk during the second trial.</p>
+    </section>
+</body>
+</html>
