@@ -14,16 +14,16 @@
     grid-column: 2 / 3;
     display: flex;
     flex-direction: column;
-    align-items: flex-end; /* Align items to the right */
+    align-items: flex-end;
     width: 100%;
     margin-bottom: 20px;
 }
 
 table.ship-table {
-    width: 75%; /* Adjust width as needed */
+    width: 75%;
     border-collapse: collapse;
     margin-bottom: 20px;
-    margin-left: auto; /* Push the table to the right */
+    margin-left: auto;
 }
 
 table.ship-table th, table.ship-table td {
@@ -49,8 +49,8 @@ table.ship-table th, table.ship-table td {
     }
 
     table.ship-table {
-        width: 100%; /* Adjust width for smaller screens */
-        margin-left: 0; /* Reset margin for smaller screens */
+        width: 100%; 
+        margin-left: 0;
     }
 }
 
