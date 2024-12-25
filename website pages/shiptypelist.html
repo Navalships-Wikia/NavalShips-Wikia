@@ -5,74 +5,15 @@
         <meta charset="UTF-8">
         <meta name="description" content="Wikipedia for Naval Ships">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <!-- Modern Styling for the Wiki -->
-        <style>
-            body {
-                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                margin: 0;
-                padding: 0;
-                background-color: #f4f4f9;
-                color: #333;
-            }
-
-            header {
-                text-align: center;
-                padding: 20px;
-                background-color: #0074cc;
-                color: white;
-            }
-
-            header img {
-                max-width: 100%;
-                height: auto;
-            }
-
-            nav {
-                background-color: #0056a3;
-                text-align: center;
-                padding: 10px 0;
-            }
-
-            nav a {
-                color: white;
-                text-decoration: none;
-                margin: 0 15px;
-                font-size: 18px;
-            }
-
-            nav a:hover {
-                text-decoration: underline;
-            }
-
-            main {
-                text-align: center;
-                padding: 20px;
-            }
-
-            .ship-type-list {
-                text-align: center;
-                margin: 20px;
-            }
-
-            footer {
-                text-align: center;
-                padding: 10px;
-                background-color: #0074cc;
-                color: white;
-                position: relative;
-                bottom: 0;
-                width: 100%;
-            }
-        </style>
+        <link rel="stylesheet" href="css/shiptypelist.css">
     </head>
 
     <body>
-        <!-- Header with Logo and Title -->
-        <header>
-            <img src="../img/NavalShips Wikia Logo.png" width="500" alt="NavalShips Wikia Logo">
-            <h1>NavalShips Wikia</h1>
-        </header>
+        <!-- Header with Logo -->
+    <header>
+        <img src="../img/nvswlogo.png" width="500" height="99" alt="NavalShip Wikia Logo" class="logo">
+        <h1>NavalShips Wikia</h1>
+    </header>
 
         <!-- Navigation Bar -->
         <nav>
@@ -86,16 +27,31 @@
         <main>
             <section class="ship-type-list">
                 <h3>List of Ships by Ship Type</h3>
-                <p>Battleship</p>
+                <h4>Battleship</h4>
                 <ul>
-                    <li><a href="../ship pages/IJN/nagato.html">IJN Battleship Nagato</a></li>
+                    <li><a href="../ship pages/IJN/nagato.html">IJN Nagato</a></li>
+                    <li><a href="../ship pages/IJN/yamato.html">IJN Yamato</a></li>
+                    <li><a href="../ship pages/KM/bismarck.html">KM Bismarck</a></li>
+                    <li><a href="../ship pages/USN/iowa.html">USS Iowa</a></li>
+                    <li><a href="../ship pages/RN/monarch.html">HM Monarch</a></li>
+                    <li><a href="../ship pages/RN/dukeofyork.html">HM Duke of York</a></li>
                 </ul>
-                <p>Heavy Cruiser</p>
-                <p>Cruiser</p>
-                <p>Light Cruiser</p>
-                <p>Destroyer</p>
-                <p>Submarine</p>
-                <p>Gunboat</p>
+                <h4>Battlecruiser</h4>
+                <ul>
+                    <li><a href="../ship pages/IJN/kongo.html">IJN Kongo</a></li>
+                    <li><a href="../ship pages/KM/grafspee.html">KM Admiral Graf Spee</a></li>
+                </ul>
+                <h4>Heavy Cruiser</h4>
+                <ul>
+                    <li><a href="../ship pages/USN/cleveland.html">USS Cleveland</a></li>
+                </ul>
+                <h4>Light Cruiser</h4>
+                <h4>Destroyer</h4>
+                <ul>
+                    <li><a href="../ship pages/IJN/kagerou.html">IJN Kagerō</a></li>
+                </ul>
+                <h4>Submarine</h4>
+                <h4>Gunboat</h4>
             </section>
         </main>
 
