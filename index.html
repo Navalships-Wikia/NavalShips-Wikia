@@ -1,34 +1,123 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
     <head>
         <title>NavalShips Wikia - Home Page</title>
+        <meta charset="UTF-8">
         <meta name="description" content="Wikipedia for Naval Ships">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Modern Styling for the Wiki -->
+        <style>
+            body {
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f9;
+                color: #333;
+            }
 
-        <table align="center">
-            <td><img src="img/NavalShips Wikia Logo.png" width="500" height="99" alt="NavalShip Wikia Logo"></td>
-        </table>
-        
-        <pre style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 32; text-align: center;"><b>NavalShips Wikia</b></pre>
-        
-        <Table width="100%" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; text-align: center;">
-            <td>Home Page</td>
-            <td><a href="website pages/fleetlist.html">List of Fleets</a></td>
-            <td><a href="website pages/shiptypelist.html">List by ship Type</a></td>
-            <td><a href="website pages/contactme.html">Contact Me</a></td>
-        </Table>
+            header {
+                text-align: center;
+                padding: 20px;
+                background-color: #0074cc;
+                color: white;
+            }
+
+            header img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            nav {
+                background-color: #0056a3;
+                text-align: center;
+                padding: 10px 0;
+            }
+
+            nav a {
+                color: white;
+                text-decoration: none;
+                margin: 0 15px;
+                font-size: 18px;
+            }
+
+            nav a:hover {
+                text-decoration: underline;
+            }
+
+            main {
+                text-align: center;
+                padding: 20px;
+            }
+
+            table {
+                margin: 20px auto;
+                border-collapse: collapse;
+                width: 75%;
+                background-color: #fff;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+
+            td {
+                padding: 15px;
+                border: 1px solid #ccc;
+                text-align: center;
+            }
+
+            footer {
+                text-align: center;
+                padding: 10px;
+                background-color: #0074cc;
+                color: white;
+                position: relative;
+                bottom: 0;
+                width: 100%;
+            }
+        </style>
     </head>
-   
-<body>
-    <section style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
-        <h2 style="text-align: center;">Welcome!</h2>
-        <table width="75%" align="center">
-            <td style="text-align: center;">Welcome to the <i>NavalShips Wikia</i>, this is a site that is practically a informative Wikipedia for millitaristic naval ships in fleets around the world! From the past to the present, we are documenting them all. Please feel free to look around and start you research on any fleet ships that interest you :)<br><br>At this moment, I am starting the Wiki off with ships mainly from the World War 2 Era, if you have any questions please head on over to the Contact me page!<br><br>Thanks for stopping by!<br>Millen P.</td>
-        </table>
-        <h2 style="text-align: center;">Collaborators</h2>
-        <table width="75%" align="center">
-            <td style="text-align: center;">If you would like to contribute, please email me, you will need to have an understanding of HTML/CSS and github commits/pulls, this is a static website. knowledge and reasearch in warships will also be required which can take an extensive amount of time.</td>
-        </table>
-    </section>
-</body>
+
+    <body>
+        <!-- Header with Logo and Title -->
+        <header>
+            <img src="img/NavalShips Wikia Logo.png" width="500" alt="NavalShips Wikia Logo">
+            <h1>NavalShips Wikia</h1>
+        </header>
+
+        <!-- Navigation Bar -->
+        <nav>
+            <a href="index.html">Home Page</a>
+            <a href="website pages/fleetlist.html">List of Fleets</a>
+            <a href="website pages/shiptypelist.html">List by Ship Type</a>
+            <a href="website pages/contactme.html">Contact Me</a>
+        </nav>
+
+        <!-- Main Content Section -->
+        <main>
+            <section>
+                <h2>Welcome!</h2>
+                <p>
+                    Welcome to the <i>NavalShips Wikia</i>, a site that serves as an informative Wikipedia for naval ships in fleets worldwide! From the past to the present, we are documenting them all.
+                    Feel free to explore and start your research on any fleet ships that interest you.
+                </p>
+                <p>
+                    Currently, the Wiki focuses on ships mainly from the World War 2 era. If you have any questions, please visit the Contact Me page.
+                </p>
+                <p>Thank you for visiting!<br>Millen P.</p>
+            </section>
+
+            <!-- Collaborators Section -->
+            <section>
+                <h2>Collaborators</h2>
+                <p>
+                    If you would like to contribute, please email me. You will need to have knowledge of HTML/CSS and GitHub for commits/pulls since this is a static website.
+                    Research expertise in warships is also required, which can be time-intensive.
+                </p>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            &copy; 2024 NavalShips Wikia. All rights reserved.
+        </footer>
+    </body>
 </html>

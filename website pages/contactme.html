@@ -1,34 +1,114 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
     <head>
         <title>NavalShips Wikia - Contact Me</title>
+        <meta charset="UTF-8">
         <meta name="description" content="Wikipedia for Naval Ships">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <table align="center">
-            <td><img src="../img/NavalShips Wikia Logo.png" width="500" height="99" alt="NavalShip Wikia Logo"></td>
-        </table>
-        
-        <pre style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 32; text-align: center;"><b>NavalShips Wikia</b></pre>
-        
-        <Table width="100%" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; text-align: center;">
-            <td><a href="../index.html">Home Page</a></td>
-            <td><a href="fleetlist.html">List of Fleets</a></td>
-            <td><a href="shiptypelist.html">List by Ship Type</a></td>
-            <td>Contact Me</td>
-        </Table>
+        <!-- Modern Styling for the Wiki -->
+        <style>
+            body {
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f9;
+                color: #333;
+            }
+
+            header {
+                text-align: center;
+                padding: 20px;
+                background-color: #0074cc;
+                color: white;
+            }
+
+            header img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            nav {
+                background-color: #0056a3;
+                text-align: center;
+                padding: 10px 0;
+            }
+
+            nav a {
+                color: white;
+                text-decoration: none;
+                margin: 0 15px;
+                font-size: 18px;
+            }
+
+            nav a:hover {
+                text-decoration: underline;
+            }
+
+            main {
+                text-align: center;
+                padding: 20px;
+            }
+
+            table.ship-table {
+                width: 75%;
+                border-collapse: collapse;
+                margin: 20px auto;
+                background-color: #fff;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+
+            table.ship-table td {
+                padding: 15px;
+                border: 1px solid #ccc;
+                text-align: center;
+            }
+
+            footer {
+                text-align: center;
+                padding: 10px;
+                background-color: #0074cc;
+                color: white;
+                position: relative;
+                bottom: 0;
+                width: 100%;
+            }
+        </style>
     </head>
 
     <body>
-        <section style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
-            <h1 style="text-align: center;">Contact the Web Master</h1>
-        
-            <p style="text-align: center;">Email:<br>millpen55@gmail.com</p>
-            <p style="text-align: center;">Instagram:<br>@transitlinx.mi</p>
-        
-            <table width="75%" align="center">
-                <td style="text-align: center;">Please use the two above methods to contact me if you encounter any issues, have suggestions or would like to ask me a question. Thank you!</td>
-            </table>
-        
+        <!-- Header with Logo and Title -->
+        <header>
+            <img src="../img/NavalShips Wikia Logo.png" width="500" alt="NavalShips Wikia Logo">
+            <h1>NavalShips Wikia</h1>
+        </header>
+
+        <!-- Navigation Bar -->
+        <nav>
+            <a href="../index.html">Home Page</a>
+            <a href="fleetlist.html">List of Fleets</a>
+            <a href="shiptypelist.html">List by Ship Type</a>
+            <a href="contactme.html" class="active">Contact Me</a>
+        </nav>
+
+        <!-- Main Content Section -->
+        <main>
+            <section>
+                <h1>Contact the Web Master</h1>
+                <p>Email:<br><a href="mailto:millpen55@gmail.com">millpen55@gmail.com</a></p>
+                <p>Instagram:<br><a href="https://www.instagram.com/transitlinx.mi" target="_blank">@transitlinx.mi</a></p>
+
+                <table class="ship-table">
+                    <tr>
+                        <td>Please use the methods above to contact me if you encounter any issues, have suggestions, or would like to ask a question. Thank you!</td>
+                    </tr>
+                </table>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            &copy; 2024 NavalShips Wikia. All rights reserved.
+        </footer>
     </body>
 </html>
