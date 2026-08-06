@@ -41,24 +41,78 @@ nav a:hover {
 
 main {
     flex: 1;
-    text-align: center;
-    padding: 20px;
+    width: min(1180px, calc(100% - 40px));
+    margin: 0 auto;
+    padding: 32px 0 50px;
+    text-align: left;
+}
+
+.eyebrow {
+    margin: 0 0 10px;
+    color: #0074cc;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.nation-hero {
+    padding: 48px clamp(24px, 6vw, 72px);
+    border-radius: 14px;
+    background: linear-gradient(135deg, #0056a3, #0074cc);
+    color: white;
+}
+
+.nation-hero .eyebrow {
+    color: #cfeaff;
+}
+
+.nation-hero h2 {
+    margin: 0 0 14px;
+    font-size: clamp(32px, 5vw, 56px);
+    line-height: 1.05;
+}
+
+.nation-hero p:last-child {
+    max-width: 620px;
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.nation-directory {
+    margin-top: 42px;
+}
+
+.directory-heading {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.directory-heading h2 {
+    margin: 0;
+    color: #0056a3;
+}
+
+.directory-heading > span {
+    color: #666;
+    font-size: 14px;
 }
 
 .nation-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    margin: 20px auto;
-    max-width: 900px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
 }
 
 .nation-button {
     position: relative;
     display: block;
-    width: 180px;
-    height: 110px;
+    width: 100%;
+    aspect-ratio: 16 / 10;
     overflow: hidden;
     background-color: #fff;
     border: 1px solid #ccc;
@@ -98,6 +152,8 @@ main {
 .nation-button:focus {
     border-color: #0074cc;
     transform: translateY(-2px);
+    outline: 2px solid #0074cc;
+    outline-offset: 2px;
 }
 
 .nation-button.active {
@@ -134,22 +190,28 @@ footer {
     }
 
     main {
-        padding: 12px;
+        width: calc(100% - 24px);
+        padding: 20px 0 32px;
     }
 
     .nation-buttons {
-        margin: 16px auto;
-    }
-
-    .nation-button {
-        width: min(180px, calc(50vw - 24px));
-        height: 100px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
     }
 }
 
 @media screen and (max-width: 480px) {
+    .directory-heading {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .nation-buttons {
+        grid-template-columns: 1fr;
+    }
+
     .nation-button {
-        width: 100%;
-        max-width: 280px;
+        max-width: none;
     }
 }
