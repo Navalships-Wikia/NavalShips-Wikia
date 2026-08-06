@@ -74,6 +74,10 @@ main {
     margin-bottom: 20px;
 }
 
+.image-container .photo {
+    width: 75%
+    height: auto;
+
 /* Styling for Tables */
 table.ship-table {
     width: 75%;
