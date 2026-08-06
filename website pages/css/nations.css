@@ -114,3 +114,42 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 14px 10px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4px 8px;
+    }
+
+    nav a {
+        margin: 0;
+        padding: 5px 4px;
+        font-size: 16px;
+    }
+
+    main {
+        padding: 12px;
+    }
+
+    .nation-buttons {
+        margin: 16px auto;
+    }
+
+    .nation-button {
+        width: min(180px, calc(50vw - 24px));
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .nation-button {
+        width: 100%;
+        max-width: 280px;
+    }
+}

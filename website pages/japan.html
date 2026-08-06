@@ -24,8 +24,6 @@
 
         <!-- Main Content Section -->
         <main>
-            <h2>Imperial Japanese Navy</h2>
-
             <div class="nation-content">
                 <article class="navy-bio">
                     <h3>About the Imperial Japanese Navy</h3>
@@ -44,9 +42,12 @@
                 </article>
 
                 <div class="ship-list">
-                    <p class="intro">Explore the documented Japanese ships by ship type.</p>
+                    <div class="ship-list-header">
+                        <h2>Imperial Japanese Navy</h2>
+                        <p class="intro">Explore the documented Japanese ships by ship type.</p>
+                    </div>
 
-                    <section class="ship-group">
+                    <section class="ship-group battlecruiser-group">
                         <h3>Battlecruisers</h3>
                         <div class="ship-grid">
                             <a class="ship-card" href="../ship%20pages/IJN/kongo.html">
@@ -68,7 +69,7 @@
                         </div>
                     </section>
 
-                    <section class="ship-group">
+                    <section class="ship-group battleship-group">
                         <h3>Battleships</h3>
                         <div class="ship-grid">
                             <a class="ship-card" href="../ship%20pages/IJN/nagato.html">
@@ -82,6 +83,14 @@
                             <a class="ship-card" href="../ship%20pages/IJN/yamato.html">
                                 <span class="ship-name">Yamato</span>
                                 <span class="ship-description">Yamato-class battleship</span>
+                            </a>
+                            <a class="ship-card" href="#">
+                                <span class="ship-name">Musashi</span>
+                                <span class="ship-description">Yamato-class battleship</span>
+                            </a>
+                            <a class="ship-card" href="#">
+                                <span class="ship-name">Shinano</span>
+                                <span class="ship-description">Yamato-class hull, completed as carrier</span>
                             </a>
                             <a class="ship-card" href="#">
                                 <span class="ship-name">Mikasa</span>
@@ -110,9 +119,10 @@
                         </div>
                     </section>
 
-                    <section class="ship-group">
+                    <section class="ship-group cruiser-group">
                         <h3>Cruisers</h3>
-                        <div class="ship-grid">
+                        <div class="ship-grid" id="cruiser-class-grid"></div>
+                        <div class="ship-grid ship-detail-grid">
                             <a class="ship-card" href="../ship%20pages/IJN/myoko.html">
                                 <span class="ship-name">Myōkō</span>
                                 <span class="ship-description">Myōkō-class heavy cruiser</span>
@@ -288,7 +298,7 @@
                         </div>
                     </section>
 
-                    <section class="ship-group">
+                    <section class="ship-group destroyer-group">
                         <h3>Destroyers</h3>
                         <div class="ship-grid" id="destroyer-grid"></div>
                     </section>
@@ -301,5 +311,6 @@
             &copy; 2024&ndash;2026 NavalShips Wikia. All rights reserved.
         </footer>
         <script src="js/japan-destroyers.js"></script>
+        <script src="js/japan-cruisers.js"></script>
     </body>
 </html>

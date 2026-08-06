@@ -24,26 +24,125 @@
 
         <!-- Main Content Section -->
         <main>
-            <section>
-                <h2>Welcome!</h2>
-                <p>
-                    Welcome to the <i>NavalShips Wikia</i>, a site that serves as an informative Wikipedia for naval ships in fleets worldwide! From the past to the present, we are documenting them all.
-                    Feel free to explore and start your research on any fleet ships that interest you. Please do note that this Wiki is currently not yet fully optimized for mobile devices,
-                    it may be best to view the website on a laptop or desktop PC.
-                </p>
-                <p>
-                    Currently, the Wiki focuses on ships mainly from the World War 2 era. If you have any questions, please visit the Contact Me page.
-                </p>
-                <p>Thank you for visiting!<br>Millen P.</p>
+            <section class="hero-section">
+                <div class="hero-content">
+                    <p class="eyebrow">A reference for naval history</p>
+                    <h2>Explore the fleets that shaped the modern age.</h2>
+                    <p>
+                        NavalShips Wikia documents warships, classes, and fleets from around the world, with a focus on the ships and naval technology of the World War II era.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="primary-button" href="website%20pages/nations.html">Browse Nations</a>
+                        <a class="secondary-button" href="#ship-search">Search Ships</a>
+                    </div>
+                </div>
             </section>
 
-            <!-- Collaborators Section -->
-            <section>
-                <h2>Collaborators</h2>
-                <p>
-                    If you would like to contribute, please email me. You will need to have knowledge of HTML/CSS and GitHub for commits/pulls since this is a static website.
-                    Research expertise in warships is also required, which can be time-intensive.
-                </p>
+            <section class="search-section" id="ship-search">
+                <label for="ship-search-input">Search the ship index</label>
+                <input id="ship-search-input" type="search" placeholder="Search by ship or class..." autocomplete="off">
+                <p id="search-status" class="search-status">Search the featured and recently added ships below.</p>
+            </section>
+
+            <div class="homepage-grid">
+                <section class="featured-ship">
+                    <div class="featured-image">
+                        <img src="img/nagato.jpg" alt="3D rendering of the Japanese battleship Nagato">
+                    </div>
+                    <div class="featured-content">
+                        <p class="eyebrow">Featured ship</p>
+                        <h2>IJN Nagato</h2>
+                        <p>
+                            A landmark Japanese battleship and flagship of the Combined Fleet, Nagato represented a major step forward in battleship design and naval firepower.
+                        </p>
+                        <a class="text-link" href="ship%20pages/IJN/nagato.html">Read the Nagato profile →</a>
+                    </div>
+                </section>
+
+                <section class="stats-section">
+                    <h2>At a glance</h2>
+                    <div class="stats-grid">
+                        <div class="stat"><strong>7</strong><span>nations represented</span></div>
+                        <div class="stat"><strong>50+</strong><span>ships and designs listed</span></div>
+                        <div class="stat"><strong>WWII</strong><span>primary focus era</span></div>
+                    </div>
+                </section>
+            </div>
+
+            <section class="homepage-section">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">Explore by flag</p>
+                        <h2>Browse by nation</h2>
+                    </div>
+                    <a class="text-link" href="website%20pages/nations.html">View all nations →</a>
+                </div>
+                <div class="nation-preview-grid">
+                    <a class="nation-preview" data-searchable="usa united states" href="website%20pages/nations.html"><img src="img/flags/us.svg" alt=""><span>USA</span></a>
+                    <a class="nation-preview" data-searchable="germany" href="website%20pages/nations.html"><img src="img/flags/de.svg" alt=""><span>Germany</span></a>
+                    <a class="nation-preview" data-searchable="japan" href="website%20pages/japan.html"><img src="img/flags/jp.svg" alt=""><span>Japan</span></a>
+                    <a class="nation-preview" data-searchable="russia" href="website%20pages/nations.html"><img src="img/flags/ru.svg" alt=""><span>Russia</span></a>
+                    <a class="nation-preview" data-searchable="italy" href="website%20pages/nations.html"><img src="img/flags/it.svg" alt=""><span>Italy</span></a>
+                    <a class="nation-preview" data-searchable="britain united kingdom" href="website%20pages/nations.html"><img src="img/flags/gb.svg" alt=""><span>Britain</span></a>
+                    <a class="nation-preview" data-searchable="france" href="website%20pages/nations.html"><img src="img/flags/fr.svg" alt=""><span>France</span></a>
+                </div>
+            </section>
+
+            <section class="homepage-section">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">Latest profiles</p>
+                        <h2>Recently added</h2>
+                    </div>
+                </div>
+                <div class="recent-grid">
+                    <a class="recent-card" data-searchable="kongo kongō battlecruiser japan" href="ship%20pages/IJN/kongo.html">
+                        <span class="recent-type">Battlecruiser · Japan</span>
+                        <strong>Kongō</strong>
+                        <span>Explore the Kongō-class battlecruiser profile.</span>
+                    </a>
+                    <a class="recent-card" data-searchable="nagato battleship japan" href="ship%20pages/IJN/nagato.html">
+                        <span class="recent-type">Battleship · Japan</span>
+                        <strong>Nagato</strong>
+                        <span>Read about Nagato’s history, armament, and specifications.</span>
+                    </a>
+                    <a class="recent-card" data-searchable="kagero kagerō destroyer japan" href="ship%20pages/IJN/kagerou.html">
+                        <span class="recent-type">Destroyer · Japan</span>
+                        <strong>Kagerō</strong>
+                        <span>Explore one of the Imperial Japanese Navy’s destroyers.</span>
+                    </a>
+                </div>
+                <p id="no-results" class="no-results" hidden>No matching ship or nation found.</p>
+            </section>
+
+            <section class="about-section">
+                <div>
+                    <p class="eyebrow">About the project</p>
+                    <h2>A growing static reference wiki.</h2>
+                </div>
+                <div>
+                    <p>
+                        NavalShips Wikia is a collaborative project documenting naval ships from the past and present. It brings together historical summaries, technical specifications, fleet context, and ship-class information in one accessible reference.
+                    </p>
+                    <p>
+                        Want to contribute? Research expertise and familiarity with HTML, CSS, and GitHub are helpful. Visit the contact page to get in touch.
+                    </p>
+                    <a class="text-link" href="website%20pages/contactme.html">Learn how to contribute →</a>
+                </div>
+            </section>
+
+            <section class="timeline-section homepage-section">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">Context</p>
+                        <h2>Naval history at a glance</h2>
+                    </div>
+                </div>
+                <div class="timeline">
+                    <div><strong>Early 20th century</strong><span>Rapid modernization and the rise of the all-big-gun battleship.</span></div>
+                    <div><strong>Interwar years</strong><span>Naval treaties, carrier development, and new approaches to fleet design.</span></div>
+                    <div><strong>World War II</strong><span>Aircraft, radar, submarines, and logistics reshape naval warfare.</span></div>
+                </div>
             </section>
         </main>
 
@@ -51,5 +150,6 @@
         <footer>
             &copy; 2024&ndash;2026 NavalShips Wikia. All rights reserved.
         </footer>
+        <script src="index.js"></script>
     </body>
 </html>
