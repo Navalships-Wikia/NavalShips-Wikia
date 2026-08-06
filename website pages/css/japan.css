@@ -1,0 +1,105 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    padding: 20px;
+    background-color: #0074cc;
+    color: white;
+    text-align: center;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
+nav {
+    padding: 10px 0;
+    background-color: #0056a3;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover,
+nav a:focus {
+    text-decoration: underline;
+}
+
+main {
+    flex: 1;
+    width: min(900px, calc(100% - 40px));
+    margin: 0 auto;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.intro {
+    margin: 0 0 30px;
+}
+
+.ship-group {
+    margin: 30px 0;
+}
+
+.ship-group h3 {
+    margin-bottom: 14px;
+    color: #0056a3;
+}
+
+.ship-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 14px;
+}
+
+.ship-card {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 18px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #333;
+    text-align: left;
+    text-decoration: none;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.ship-card:hover,
+.ship-card:focus {
+    border-color: #0074cc;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+    transform: translateY(-2px);
+}
+
+.ship-name {
+    color: #0056a3;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.ship-description {
+    color: #666;
+}
+
+footer {
+    padding: 10px;
+    background-color: #0074cc;
+    color: white;
+    text-align: center;
+}
