@@ -70,6 +70,11 @@ main {
     padding-right: 5px;
 }
 
+.text-section p {
+    line-height: 1.6;
+    margin-bottom: 1.2em;
+}
+
 .table-container {
     display: flex;
     flex-direction: column;
