@@ -11,15 +11,25 @@ body {
 }
 
 header {
-    text-align: center;
-    padding: 20px;
-    background-color: #0074cc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding: 22px clamp(20px, 5vw, 70px);
+    background: linear-gradient(135deg, #004b8d, #0074cc 65%, #0b8fe3);
     color: white;
 }
 
 header img {
-    max-width: 100%;
+    display: block;
+    width: min(360px, 42vw);
     height: auto;
+}
+
+header h1 {
+    margin: 0;
+    font-size: clamp(24px, 3vw, 38px);
+    letter-spacing: 0.04em;
 }
 
 nav {
@@ -173,6 +183,8 @@ footer {
 
 @media screen and (max-width: 768px) {
     header {
+        flex-direction: column;
+        gap: 8px;
         padding: 14px 10px;
     }
 
