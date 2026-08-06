@@ -1,0 +1,88 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background: #f4f4f9;
+    color: #333;
+    font-family: Inter, "Noto Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: Inter, "Noto Sans", system-ui, sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding: 22px clamp(20px, 5vw, 70px);
+    background: linear-gradient(135deg, #004b8d, #0074cc 65%, #0b8fe3);
+    color: #fff;
+}
+
+header img { display: block; width: min(360px, 42vw); height: auto; }
+header h1 { margin: 0; font-size: clamp(24px, 3vw, 38px); letter-spacing: 0.04em; }
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    padding: 8px 16px;
+    background: rgba(0, 86, 163, 0.96);
+    box-shadow: 0 4px 14px rgba(0, 43, 82, 0.18);
+}
+
+nav a {
+    margin: 0;
+    padding: 8px 14px;
+    border: 1px solid transparent;
+    border-radius: 999px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+nav a:hover,
+nav a:focus {
+    border-color: rgba(255, 255, 255, 0.35);
+    background: rgba(255, 255, 255, 0.12);
+    text-decoration: none;
+}
+
+nav a[aria-current="page"] {
+    background: #fff;
+    color: #0056a3;
+}
+main { width: min(1180px, calc(100% - 40px)); margin: 0 auto; padding: 32px 0 50px; }
+
+.history-hero { margin-bottom: 28px; padding: 38px clamp(24px, 5vw, 56px); border-radius: 14px; background: linear-gradient(135deg, #0056a3, #0074cc); color: #fff; }
+.eyebrow { margin: 0 0 8px; color: #cfeaff; font-size: 0.8em; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
+.history-hero h2 { margin: 0 0 12px; font-size: clamp(28px, 4vw, 44px); }
+.history-hero p:last-child { max-width: 720px; margin-bottom: 0; line-height: 1.6; }
+.history-section { margin-bottom: 18px; padding: 26px clamp(22px, 4vw, 38px); border: 1px solid #d7e2ec; border-radius: 10px; background: #fff; box-shadow: 0 3px 10px rgba(0, 56, 112, 0.08); }
+.history-section h3 { margin: 0 0 12px; color: #0056a3; }
+.history-section p { max-width: 850px; margin: 0; line-height: 1.7; }
+footer { margin-top: auto; padding: 10px; background: #0074cc; color: #fff; text-align: center; }
+
+@media (max-width: 600px) {
+    header { flex-direction: column; gap: 8px; padding: 14px 10px; }
+    nav { flex-wrap: wrap; gap: 4px; }
+    nav a { padding: 7px 10px; font-size: 15px; }
+    main { width: min(100% - 24px, 1180px); padding-top: 24px; }
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}

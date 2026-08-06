@@ -6,7 +6,13 @@ body {
     padding: 0;
     background-color: #f4f4f9;
     color: #333;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: Inter, "Noto Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: Inter, "Noto Sans", system-ui, sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
 }
 
 header {
@@ -122,6 +128,40 @@ main {
     color: #0056a3;
 }
 
+.navy-bio-image {
+    margin: 18px 0 24px;
+    text-align: center;
+}
+
+.navy-bio-image img {
+    display: block;
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 56, 112, 0.14);
+}
+
+.navy-bio-image figcaption {
+    margin-top: 8px;
+    color: #666;
+    font-size: 0.9em;
+}
+
+.image-credit {
+    display: block;
+    max-width: 900px;
+    margin: 4px auto 0;
+    color: #777;
+    font-size: 0.78em;
+    line-height: 1.4;
+}
+
+.image-credit a {
+    color: #0056a3;
+}
+
 .navy-bio p {
     margin-bottom: 1.2em;
 }
@@ -161,6 +201,66 @@ main {
     text-align: left;
     text-decoration: none;
     transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.ship-card-featured {
+    position: relative;
+    justify-content: flex-end;
+    overflow: hidden;
+    padding: 0;
+    color: #fff;
+    background: #1d2b38;
+}
+
+.ship-card-featured > img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 78% center;
+    transform: scale(1.18);
+}
+
+.ship-card-featured::after {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(0, 45, 80, 0.68) 0%,
+        rgba(0, 45, 80, 0.58) 18%,
+        rgba(0, 45, 80, 0.4) 38%,
+        rgba(0, 45, 80, 0.22) 60%,
+        rgba(0, 45, 80, 0.07) 80%,
+        rgba(0, 45, 80, 0) 100%
+    );
+    content: "";
+}
+
+.ship-card-featured > .ship-name,
+.ship-card-featured > .ship-description {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 18px;
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.ship-card-featured > .ship-name {
+    align-self: flex-start;
+    width: auto;
+    margin-left: 18px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.84);
+    color: #0056a3;
+    text-shadow: none;
+}
+
+.ship-card-featured > .ship-description {
+    padding-bottom: 18px;
 }
 
 .ship-card:hover,
@@ -244,4 +344,51 @@ footer {
     .ship-card {
         padding: 15px;
     }
+}
+
+/* Shared modern navigation */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px;
+    padding: 8px 16px;
+    background: rgba(0, 86, 163, 0.96);
+    box-shadow: 0 4px 14px rgba(0, 43, 82, 0.18);
+}
+
+nav a {
+    margin: 0;
+    padding: 8px 14px;
+    border: 1px solid transparent;
+    border-radius: 999px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+nav a:hover,
+nav a:focus {
+    border-color: rgba(255, 255, 255, 0.35);
+    background: rgba(255, 255, 255, 0.12);
+    text-decoration: none;
+}
+
+nav a.active,
+nav a[aria-current="page"] {
+    background: #fff;
+    color: #0056a3;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }
