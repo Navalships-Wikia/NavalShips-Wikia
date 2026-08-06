@@ -21,7 +21,8 @@ const cruiserClasses = [
 for (const [className, slug] of cruiserClasses) {
     const card = document.createElement('a');
     card.className = 'ship-card';
-    card.href = `classes/${slug}.html`;
+    const nationFolder = slug === 'ning-hai' ? 'ROC' : 'IJN';
+    card.href = `../ship pages/${nationFolder}/classes/${slug}.html`;
 
     const name = document.createElement('span');
     name.className = 'ship-name';

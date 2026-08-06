@@ -21,7 +21,7 @@ const destroyerClasses = [
 for (const [className, slug] of destroyerClasses) {
     const card = document.createElement('a');
     card.className = 'ship-card';
-    card.href = `classes/${slug}.html`;
+    card.href = `../ship pages/IJN/classes/${slug}.html`;
 
     const name = document.createElement('span');
     name.className = 'ship-name';

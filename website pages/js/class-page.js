@@ -4,8 +4,8 @@ const className = document.querySelector('#class-name');
 const classType = document.querySelector('#class-type');
 const shipGrid = document.querySelector('#class-ships');
 const shipPages = {
-    'Myōkō': '../../ship%20pages/IJN/myoko.html',
-    'Kagerō': '../../ship%20pages/IJN/kagerou.html'
+    'Myōkō': '../../../ship%20pages/IJN/myoko.html',
+    'Kagerō': '../../../ship%20pages/IJN/kagerou.html'
 };
 
 if (currentClass) {
