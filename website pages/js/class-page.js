@@ -30,7 +30,7 @@ if (currentClass) {
     className.textContent = `${currentClass.name}-class`;
     classType.textContent = currentClass.type;
 
-    currentClass.ships.forEach((ship) => {
+    [...currentClass.ships].sort((first, second) => first.localeCompare(second, 'en', { sensitivity: 'base' })).forEach((ship) => {
         const card = document.createElement('a');
         card.className = 'ship-card';
         card.href = shipPages[ship] || '#';

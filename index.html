@@ -6,12 +6,14 @@
         <meta name="description" content="Wikipedia for Naval Ships">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="index.css">
-    </head>
+        <link rel="stylesheet" href="theme.css">
+    <script src="theme.js" defer></script>
+</head>
 
     <body>
         <!-- Header with Logo -->
     <header>
-        <img src="img/nvswlogo.png" width="500" height="99" alt="NavalShip Wikia Logo" class="logo">
+        <img src="img/branding/nvswlogo.png" width="500" height="99" alt="NavalShip Wikia Logo" class="logo">
         <h1 class="visually-hidden">NavalShips Wikia</h1>
     </header>
 
@@ -47,7 +49,7 @@
             <div class="homepage-grid">
                 <section class="featured-ship">
                     <div class="featured-image">
-                        <img src="img/nagato.jpg" alt="3D rendering of the Japanese battleship Nagato">
+                        <img src="img/ships/IJN/nagato/nagato.jpg" alt="3D rendering of the Japanese battleship Nagato">
                     </div>
                     <div class="featured-content">
                         <p class="eyebrow">Featured ship</p>
@@ -63,7 +65,7 @@
                     <h2>At a glance</h2>
                     <div class="stats-grid">
                         <div class="stat"><strong>7</strong><span>nations represented</span></div>
-                        <div class="stat"><strong>50+</strong><span>ships and designs listed</span></div>
+                        <div class="stat"><strong>219</strong><span>ships listed</span></div>
                         <div class="stat"><strong>WWII</strong><span>primary focus era</span></div>
                     </div>
                 </section>
@@ -95,23 +97,7 @@
                         <h2>Recently added</h2>
                     </div>
                 </div>
-                <div class="recent-grid">
-                    <a class="recent-card" data-searchable="kongo kongō battlecruiser japan" href="ship%20pages/IJN/kongo.html">
-                        <span class="recent-type">Battlecruiser · Japan</span>
-                        <strong>Kongō</strong>
-                        <span>Explore the Kongō-class battlecruiser profile.</span>
-                    </a>
-                    <a class="recent-card" data-searchable="nagato battleship japan" href="ship%20pages/IJN/nagato.html">
-                        <span class="recent-type">Battleship · Japan</span>
-                        <strong>Nagato</strong>
-                        <span>Read about Nagato’s history, armament, and specifications.</span>
-                    </a>
-                    <a class="recent-card" data-searchable="kagero kagerō destroyer japan" href="ship%20pages/IJN/kagerou.html">
-                        <span class="recent-type">Destroyer · Japan</span>
-                        <strong>Kagerō</strong>
-                        <span>Explore one of the Imperial Japanese Navy’s destroyers.</span>
-                    </a>
-                </div>
+                <div class="recent-grid" id="recent-grid" aria-live="polite"></div>
                 <p id="no-results" class="no-results" hidden>No matching ship or nation found.</p>
             </section>
 

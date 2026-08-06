@@ -18,7 +18,7 @@ const destroyerClasses = [
     ['Shimakaze', 'shimakaze']
 ];
 
-for (const [className, slug] of destroyerClasses) {
+for (const [className, slug] of destroyerClasses.sort((first, second) => first[0].localeCompare(second[0], 'en', { sensitivity: 'base' }))) {
     const card = document.createElement('a');
     card.className = 'ship-card';
     card.href = `../ship pages/IJN/classes/${slug}.html`;

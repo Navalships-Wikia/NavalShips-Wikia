@@ -1,0 +1,256 @@
+html[data-theme="dark"] {
+    color-scheme: dark;
+}
+
+html[data-theme="dark"] body {
+    background: #0b1420;
+    color: #e6edf3;
+}
+
+html[data-theme="dark"] header {
+    background: linear-gradient(135deg, #062b50, #064f86 65%, #0873b5);
+}
+
+html[data-theme="dark"] nav {
+    background: #073b6b;
+}
+
+html[data-theme="dark"] nav a {
+    color: #e6f4ff;
+}
+
+html[data-theme="dark"] main,
+html[data-theme="dark"] section,
+html[data-theme="dark"] article,
+html[data-theme="dark"] .card,
+html[data-theme="dark"] .featured-content,
+html[data-theme="dark"] .featured-ship,
+html[data-theme="dark"] .homepage-section,
+html[data-theme="dark"] .stats-section,
+html[data-theme="dark"] .search-section,
+html[data-theme="dark"] .about-card,
+html[data-theme="dark"] .about-section,
+html[data-theme="dark"] .contact-card,
+html[data-theme="dark"] .contact-method,
+html[data-theme="dark"] .contribution-card,
+html[data-theme="dark"] .ship-card,
+html[data-theme="dark"] .recent-card,
+html[data-theme="dark"] .nation-preview,
+html[data-theme="dark"] .nation-button,
+html[data-theme="dark"] .stat,
+html[data-theme="dark"] .timeline,
+html[data-theme="dark"] .navy-bio,
+html[data-theme="dark"] .history-section,
+html[data-theme="dark"] .nation-content,
+html[data-theme="dark"] .table-container,
+html[data-theme="dark"] .image-container,
+html[data-theme="dark"] .ship-timeline {
+    color: #e6edf3;
+}
+
+html[data-theme="dark"] .featured-content,
+html[data-theme="dark"] .featured-ship,
+html[data-theme="dark"] .homepage-section,
+html[data-theme="dark"] .stats-section,
+html[data-theme="dark"] .search-section,
+html[data-theme="dark"] .about-card,
+html[data-theme="dark"] .about-section,
+html[data-theme="dark"] .contact-card,
+html[data-theme="dark"] .contact-method,
+html[data-theme="dark"] .contribution-card,
+html[data-theme="dark"] .ship-card,
+html[data-theme="dark"] .recent-card,
+html[data-theme="dark"] .nation-preview,
+html[data-theme="dark"] .nation-button,
+html[data-theme="dark"] .stat,
+html[data-theme="dark"] .timeline,
+html[data-theme="dark"] .timeline > div,
+html[data-theme="dark"] .navy-bio,
+html[data-theme="dark"] .history-section,
+html[data-theme="dark"] .nation-content,
+html[data-theme="dark"] .ship-timeline {
+    border-color: #29445d;
+    background: #10202f;
+}
+
+/* Hero banners (homepage, contact, history, nations) keep their own
+   darker gradient instead of flattening to the card color, so they
+   still read as a distinct "hero" band, with headings forced to
+   pure white for reliable contrast against the gradient. */
+html[data-theme="dark"] .hero-section,
+html[data-theme="dark"] .contact-hero,
+html[data-theme="dark"] .history-hero,
+html[data-theme="dark"] .nation-hero {
+    background: linear-gradient(135deg, #043a68, #045a94 65%, #0a7dc0);
+    color: #eaf5ff;
+}
+
+html[data-theme="dark"] .hero-section h2,
+html[data-theme="dark"] .contact-hero h2,
+html[data-theme="dark"] .history-hero h2,
+html[data-theme="dark"] .nation-hero h2 {
+    color: #ffffff;
+}
+
+/* .primary-button is a white pill on the hero (dark blue text on a
+   white background) — it must keep dark text, not the light text
+   used by .secondary-button/.nation-button, or the label disappears. */
+html[data-theme="dark"] .secondary-button,
+html[data-theme="dark"] .nation-button {
+    color: #eff8ff;
+}
+
+html[data-theme="dark"] .search-status,
+html[data-theme="dark"] .no-results,
+html[data-theme="dark"] .method-label {
+    color: #b9cbd8;
+}
+
+html[data-theme="dark"] h1,
+html[data-theme="dark"] h2,
+html[data-theme="dark"] h3,
+html[data-theme="dark"] h4,
+html[data-theme="dark"] .page-title,
+html[data-theme="dark"] .section-title {
+    color: #8ed0ff;
+}
+
+html[data-theme="dark"] p,
+html[data-theme="dark"] li,
+html[data-theme="dark"] label,
+html[data-theme="dark"] .page-subtitle,
+html[data-theme="dark"] .page-eyebrow,
+html[data-theme="dark"] .source-note,
+html[data-theme="dark"] figcaption,
+html[data-theme="dark"] .image-credit {
+    color: #c3d0dc;
+}
+
+html[data-theme="dark"] a {
+    color: #7cc8ff;
+}
+
+/* Stat/timeline/recent-card children set their own light-mode colors
+   directly on <strong>/<span>, which are more specific than the
+   container rules above and were otherwise left unreadable on the
+   new dark card backgrounds. */
+html[data-theme="dark"] .stat strong,
+html[data-theme="dark"] .timeline > div strong,
+html[data-theme="dark"] .recent-card strong {
+    color: #7cc8ff;
+}
+
+html[data-theme="dark"] .stat span,
+html[data-theme="dark"] .timeline > div span,
+html[data-theme="dark"] .recent-card > span:last-child {
+    color: #b9cbd8;
+}
+
+html[data-theme="dark"] .recent-type {
+    color: #7cc8ff;
+}
+
+/* Ship-card labels (nation pages, class pages) — excludes the
+   photo-overlay "featured" card variant, which already sets its own
+   readable colors (white-on-photo or dark-on-white-badge) that
+   should not be touched. */
+html[data-theme="dark"] .ship-card:not(.ship-card-featured) > .ship-name {
+    color: #7cc8ff;
+}
+
+html[data-theme="dark"] .ship-card:not(.ship-card-featured) > .ship-description {
+    color: #b9cbd8;
+}
+
+html[data-theme="dark"] .directory-heading > span {
+    color: #b9cbd8;
+}
+
+/* Ship spec-table timeline (right rail on ship pages) */
+html[data-theme="dark"] .ship-timeline time {
+    color: #7cc8ff;
+}
+
+html[data-theme="dark"] .ship-timeline span {
+    color: #b9cbd8;
+}
+
+html[data-theme="dark"] .ship-timeline ol::before {
+    background: #29445d;
+}
+
+html[data-theme="dark"] table,
+html[data-theme="dark"] table td,
+html[data-theme="dark"] table th,
+html[data-theme="dark"] .ship-table td,
+html[data-theme="dark"] .ship-table th {
+    border-color: #29445d;
+}
+
+html[data-theme="dark"] table td,
+html[data-theme="dark"] .ship-table td {
+    background: #142536;
+    color: #dce8f1;
+}
+
+html[data-theme="dark"] table tr:nth-child(even) td,
+html[data-theme="dark"] .ship-table tr:nth-child(even) td {
+    background: #10202f;
+}
+
+/* table.ship-table tbody td:first-child (the label column) sets its
+   own blue text color with higher specificity than ".ship-table td"
+   above, so it was staying dark-blue-on-dark-navy. Same for the
+   light hover background, which left light text unreadable on
+   hover. Both need to be matched/beaten here explicitly. */
+html[data-theme="dark"] table.ship-table tbody td:first-child,
+html[data-theme="dark"] .ship-table tbody td:first-child {
+    color: #9fd3ff;
+}
+
+html[data-theme="dark"] table.ship-table tbody tr:hover td,
+html[data-theme="dark"] .ship-table tbody tr:hover td {
+    background: #1c3247;
+    color: #eaf4ff;
+}
+
+html[data-theme="dark"] .source-note,
+html[data-theme="dark"] .contact-method {
+    border-top-color: #29445d;
+}
+
+html[data-theme="dark"] input,
+html[data-theme="dark"] textarea,
+html[data-theme="dark"] select {
+    border-color: #35556e;
+    background: #142536;
+    color: #e6edf3;
+}
+
+html[data-theme="dark"] footer {
+    background: #07101a;
+    color: #aebdca;
+}
+
+.theme-toggle {
+    margin-left: 12px;
+    padding: 6px 11px;
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    border-radius: 999px;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+    font: inherit;
+    font-size: 0.85em;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus-visible {
+    background: rgba(255, 255, 255, 0.14);
+}
+
+@media screen and (max-width: 768px) {
+    .theme-toggle {
+        margin: 4px 0 0;
+    }
+}

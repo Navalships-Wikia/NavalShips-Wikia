@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>NavalShips Wikia - {{NATION_NAME}}</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="{{NATION_DESCRIPTION}}">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/nation-page.css">
+    </head>
+
+    <body>
+        <!-- Header with Logo -->
+        <header>
+            <img src="{{LOGO_PATH}}" width="500" height="99" alt="NavalShip Wikia Logo" class="logo">
+            <h1 class="visually-hidden">NavalShips Wikia</h1>
+        </header>
+
+        <!-- Navigation Bar -->
+        <nav>
+            <a href="{{HOME_LINK}}">Home Page</a>
+            <a href="{{NATIONS_LINK}}" class="active">Nations</a>
+            <a href="{{HISTORY_LINK}}">Naval History</a>
+            <a href="{{CONTACT_LINK}}">About and Contact</a>
+        </nav>
+
+        <!-- Main Content Section -->
+        <main>
+            <div class="nation-content">
+                <article class="navy-bio">
+                    <h3>About the {{NATION_NAME}}</h3>
+                    <figure class="navy-bio-image">
+                        <img src="{{NATION_IMAGE}}" alt="{{NATION_IMAGE_ALT}}">
+                        <figcaption>{{NATION_IMAGE_CAPTION}}</figcaption>
+                        <small class="image-credit">{{NATION_IMAGE_CREDIT}}</small>
+                    </figure>
+
+                    <!-- Replace these paragraphs with the nation’s history and naval overview. -->
+                    <p>{{NATION_INTRO_PARAGRAPH_1}}</p>
+                    <p>{{NATION_INTRO_PARAGRAPH_2}}</p>
+                    <p>{{NATION_INTRO_PARAGRAPH_3}}</p>
+                    <p>{{NATION_INTRO_PARAGRAPH_4}}</p>
+                </article>
+
+                <div class="ship-list">
+                    <div class="ship-list-header">
+                        <h2>{{NATION_NAME}}</h2>
+                        <p class="intro">Explore the documented {{NATION_ADJECTIVE}} ships by ship type.</p>
+                    </div>
+
+                    <!-- Duplicate this section for each ship type used by the nation. -->
+                    <section class="ship-group {{SHIP_GROUP_CLASS}}">
+                        <h3>{{SHIP_GROUP_NAME}}</h3>
+                        <div class="ship-grid">
+                            <!-- Replace this comment with ship-card elements. -->
+                            <a class="ship-card" href="{{SHIP_PROFILE_LINK}}">
+                                <span class="ship-name">{{SHIP_NAME}}</span>
+                                <span class="ship-description">{{SHIP_DESCRIPTION}}</span>
+                            </a>
+                        </div>
+                    </section>
+
+                    <!-- Optional JavaScript-populated group example:
+                    <section class="ship-group {{DYNAMIC_GROUP_CLASS}}">
+                        <h3>{{DYNAMIC_GROUP_NAME}}</h3>
+                        <div class="ship-grid" id="{{DYNAMIC_GROUP_ID}}"></div>
+                    </section>
+                    -->
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            &copy; 2024&ndash;2026 NavalShips Wikia. All rights reserved.
+        </footer>
+
+        <!-- Add nation-specific scripts here, if needed. -->
+        {{ADDITIONAL_SCRIPTS}}
+    </body>
+</html>

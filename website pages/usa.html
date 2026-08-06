@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>NavalShips Wikia - United States</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Documented naval ships and history of the United States.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/nation-page.css">
+        <link rel="stylesheet" href="../theme.css">
+    <script src="../theme.js" defer></script>
+</head>
+
+    <body>
+        <header>
+            <img src="../img/branding/nvswlogo.png" width="500" height="99" alt="NavalShip Wikia Logo" class="logo">
+            <h1 class="visually-hidden">NavalShips Wikia</h1>
+        </header>
+
+        <nav>
+            <a href="../index.html">Home Page</a>
+            <a href="nations.html" class="active">Nations</a>
+            <a href="history.html">Naval History</a>
+            <a href="contactme.html">About and Contact</a>
+        </nav>
+
+        <main>
+            <div class="nation-content">
+                <article class="navy-bio">
+                    <h3>About the United States Navy</h3>
+                    <figure class="navy-bio-image">
+                        <img src="../img/flags/us.svg" alt="United States flag">
+                        <figcaption>United States flag</figcaption>
+                        <small class="image-credit">National flag image.</small>
+                    </figure>
+                    <p>Ship profiles and a naval history overview for the United States are being prepared.</p>
+                    <p>Additional historical context and reference material will be added as this collection grows.</p>
+                </article>
+
+                <div class="ship-list">
+                    <div class="ship-list-header">
+                        <h2>United States</h2>
+                        <p class="intro">Explore the documented United States ships by ship type.</p>
+                    </div>
+
+                    <section class="ship-group battleship-group">
+                        <h3>Battleships</h3>
+                        <div class="ship-grid" id="usn-battleship-grid"></div>
+                    </section>
+
+                    <section class="ship-group carrier-group">
+                        <h3>Aircraft Carriers</h3>
+                        <div class="ship-grid" id="usn-carrier-grid"></div>
+                    </section>
+
+                    <section class="ship-group cruiser-group">
+                        <h3>CB — Large Cruisers</h3>
+                        <div class="ship-grid" id="usn-cb-grid"></div>
+                    </section>
+
+                    <section class="ship-group cruiser-group">
+                        <h3>CA — Heavy Cruisers</h3>
+                        <div class="ship-grid" id="usn-ca-grid"></div>
+                    </section>
+
+                    <section class="ship-group cruiser-group">
+                        <h3>CL — Light Cruisers</h3>
+                        <div class="ship-grid" id="usn-cl-grid"></div>
+                    </section>
+
+                    <section class="ship-group special-group">
+                        <h3>Special Vessels</h3>
+                        <div class="ship-grid" id="usn-special-grid"></div>
+                    </section>
+
+                    <section class="ship-group destroyer-group">
+                        <h3>Destroyers</h3>
+                        <div class="ship-grid" id="usn-destroyer-grid"></div>
+                    </section>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            &copy; 2024&ndash;2026 NavalShips Wikia. All rights reserved.
+        </footer>
+        <script src="js/usa-classes.js"></script>
+    </body>
+</html>

@@ -30,8 +30,14 @@ index.html              Site home page
 ship pages/             Individual ship profiles and nation-specific class pages
 website pages/          Nation directories, class browsers, and supporting pages
 Templates/              Shared navigation and footer fragments
-img/                    Logos, ship images, and national flags
+img/                    Organized visual assets: branding, flags, ship images, and references
+  branding/             Site branding assets
+  flags/                National flags
+  ships/                Ship-specific imagery grouped by navy and ship
+  reference/            Reusable historical and equipment imagery
 ```
+
+The full-page nation template is available at [Templates/nation-page.html](Templates/nation-page.html). Replace its `{{...}}` placeholders with the nation’s content, links, images, ship groups, and optional scripts.
 
 ## Running locally
 

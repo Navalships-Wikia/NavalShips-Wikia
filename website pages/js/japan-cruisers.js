@@ -18,7 +18,7 @@ const cruiserClasses = [
     ['Ning Hai', 'ning-hai']
 ];
 
-for (const [className, slug] of cruiserClasses) {
+for (const [className, slug] of cruiserClasses.sort((first, second) => first[0].localeCompare(second[0], 'en', { sensitivity: 'base' }))) {
     const card = document.createElement('a');
     card.className = 'ship-card';
     const nationFolder = slug === 'ning-hai' ? 'ROC' : 'IJN';
