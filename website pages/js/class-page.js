@@ -3,10 +3,27 @@ const currentClass = classData[classKey];
 const className = document.querySelector('#class-name');
 const classType = document.querySelector('#class-type');
 const shipGrid = document.querySelector('#class-ships');
-const shipPages = {
-    'Myōkō': '../../../ship%20pages/IJN/myoko.html',
-    'Kagerō': '../../../ship%20pages/IJN/kagerou.html'
+const shipSlugOverrides = {
+    'Kagerō': 'kagerou',
+    'Myōkō': 'myoko'
 };
+
+const shipSlug = (ship) => shipSlugOverrides[ship] || ship
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '');
+
+const shipPages = {};
+Object.values(classData).forEach((classInfo) => {
+    classInfo.ships.forEach((ship) => {
+        const isRocShip = ship === 'Ioshima' || ship === 'Yasoshima';
+        shipPages[ship] = isRocShip
+            ? `../../../ship%20pages/ROC/${shipSlug(ship)}.html`
+            : `../${shipSlug(ship)}.html`;
+    });
+});
 
 if (currentClass) {
     document.title = `NavalShips Wikia - ${currentClass.name}-class`;

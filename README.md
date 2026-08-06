@@ -42,3 +42,11 @@ python3 -m http.server
 ```
 
 Then visit `http://localhost:8000`.
+
+## Validate links
+
+Run the local link checker after adding or renaming a ship profile:
+
+```bash
+node scripts/validate-links.js
+```
