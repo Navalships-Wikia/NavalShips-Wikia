@@ -75,6 +75,30 @@ main {
     margin-bottom: 1.2em;
 }
 
+.armament-intro {
+    display: flow-root;
+}
+
+.armament-image {
+    float: left;
+    width: 42%;
+    max-width: 360px;
+    margin: 0 20px 10px 0;
+    text-align: center;
+}
+
+.armament-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.armament-image figcaption {
+    margin-top: 6px;
+    color: #666;
+    font-size: 0.9em;
+}
+
 .table-container {
     display: flex;
     flex-direction: column;

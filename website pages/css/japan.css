@@ -51,6 +51,35 @@ main {
     margin: 0 0 30px;
 }
 
+.nation-content {
+    display: grid;
+    grid-template-columns: minmax(280px, 0.9fr) minmax(0, 1.4fr);
+    gap: 30px;
+    align-items: start;
+    text-align: left;
+}
+
+.navy-bio {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    line-height: 1.6;
+}
+
+.navy-bio h3 {
+    margin-top: 0;
+    color: #0056a3;
+}
+
+.navy-bio p {
+    margin-bottom: 1.2em;
+}
+
+.navy-bio p:last-child {
+    margin-bottom: 0;
+}
+
 .ship-group {
     margin: 30px 0;
 }
@@ -102,4 +131,10 @@ footer {
     background-color: #0074cc;
     color: white;
     text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .nation-content {
+        grid-template-columns: 1fr;
+    }
 }
