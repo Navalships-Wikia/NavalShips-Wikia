@@ -76,21 +76,28 @@ main {
 }
 
 .armament-intro {
-    display: flow-root;
+    display: grid;
+    grid-template-columns: minmax(220px, 42%) minmax(0, 1fr);
+    gap: 20px;
+    align-items: stretch;
 }
 
 .armament-image {
-    float: left;
-    width: 42%;
-    max-width: 360px;
-    margin: 0 20px 10px 0;
+    display: grid;
+    grid-template-rows: minmax(0, 1fr) auto;
+    width: auto;
+    max-width: none;
+    margin: 0;
     text-align: center;
 }
 
 .armament-image img {
     display: block;
     width: 100%;
-    height: auto;
+    height: 100%;
+    min-height: 0;
+    object-fit: cover;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .armament-image figcaption {
@@ -150,6 +157,14 @@ table.ship-table td {
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
+    .armament-intro {
+        grid-template-columns: 1fr;
+    }
+
+    .armament-image img {
+        height: auto;
+    }
+
     .content-container {
         flex-direction: column;
     }
