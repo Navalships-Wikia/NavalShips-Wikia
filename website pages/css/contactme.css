@@ -41,22 +41,98 @@ nav a:hover {
 
 main {
     flex: 1;
-    text-align: center;
-    padding: 20px;
+    width: min(1000px, calc(100% - 40px));
+    margin: 0 auto;
+    padding: 32px 0 50px;
+    text-align: left;
 }
 
-table.ship-table {
-    width: 75%;
-    border-collapse: collapse;
-    margin: 20px auto;
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.eyebrow {
+    margin: 0 0 10px;
+    color: #0074cc;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
 }
 
-table.ship-table td {
-    padding: 15px;
-    border: 1px solid #ccc;
-    text-align: center;
+.contact-hero {
+    padding: 48px clamp(24px, 6vw, 72px);
+    border-radius: 14px;
+    background: linear-gradient(135deg, #0056a3, #0074cc);
+    color: white;
+}
+
+.contact-hero .eyebrow {
+    color: #cfeaff;
+}
+
+.contact-hero h2 {
+    margin: 0 0 14px;
+    font-size: clamp(32px, 5vw, 54px);
+    line-height: 1.05;
+}
+
+.contact-hero p:last-child {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: minmax(260px, 0.8fr) minmax(0, 1.2fr);
+    gap: 20px;
+    margin-top: 28px;
+}
+
+.contact-card {
+    padding: 28px;
+    border: 1px solid #d7d7d7;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.06);
+}
+
+.contact-card h2 {
+    margin: 0 0 24px;
+    color: #0056a3;
+}
+
+.contact-method {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 14px 0;
+    border-top: 1px solid #e1e1e1;
+}
+
+.method-label {
+    color: #666;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.contact-method a {
+    color: #0056a3;
+    font-weight: bold;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+}
+
+.contact-method a:hover,
+.contact-method a:focus {
+    text-decoration: underline;
+}
+
+.contribution-card p:not(.eyebrow) {
+    line-height: 1.6;
+}
+
+.about-card {
+    grid-column: 1 / -1;
 }
 
 footer {
@@ -88,11 +164,21 @@ footer {
     }
 
     main {
-        padding: 12px;
+        width: calc(100% - 24px);
+        padding: 20px 0 32px;
     }
 
-    table.ship-table {
-        width: 100%;
-        font-size: 14px;
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .about-card {
+        grid-column: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact-card {
+        padding: 20px;
     }
 }
