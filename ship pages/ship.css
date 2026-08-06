@@ -43,20 +43,30 @@ main {
 
 /* Grid Layout for Content */
 .content-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-flow: row dense;
+    display: flex;
+    align-items: flex-start;
     gap: 20px;
     margin: 20px;
 }
 
+.text-column {
+    flex: 1;
+    min-width: 0;
+}
+
+.media-column {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
 .text-section {
-    grid-column: 1 / 2;
     padding-right: 5px;
 }
 
 .table-container {
-    grid-column: 2 / 3;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -108,14 +118,21 @@ table.ship-table td {
 /* Responsive Design */
 @media screen and (max-width: 768px) {
     .content-container {
-        grid-template-columns: 1fr;
+        flex-direction: column;
     }
 
-    .text-section, .table-container {
-        grid-column: 1 / 2;
+    .text-column, .media-column {
+        width: 100%;
+    }
+
+    .text-section {
         padding-right: 0;
         margin-bottom: 20px;
         text-align: center;
+    }
+
+    .media-column {
+        align-items: center;
     }
 
     .table-container {
@@ -126,6 +143,10 @@ table.ship-table td {
     table.ship-table {
         width: 100%;
         margin-left: 0;
+    }
+
+    .image-container .photo {
+        width: 100%;
     }
 }
 
