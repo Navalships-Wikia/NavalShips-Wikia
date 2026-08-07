@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18786f2b-5a05-4652-9f0c-2c2fc61e0ac5" name="Changes" comment="Refactored navigation links and redesigned fleet list to nations-based layout with updated CSS styling.">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+    <list default="true" id="18786f2b-5a05-4652-9f0c-2c2fc61e0ac5" name="Changes" comment="Added images in japan.html for all of the aircraft carriers. Will work on revamp of the Cruiser grid later, using Javascript breaks ability to use photos on the ship/class cards. Same will have to be done for the destroyer group, for now, I have left japan-destroyers.js intact.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website pages/japan.html" beforeDir="false" afterPath="$PROJECT_DIR$/website pages/japan.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,61 +38,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.000024396519071" />
-      <entry key="S2" value="1.1337471424822954" />
-      <entry key="S5" value="2.3175068490896553" />
-      <entry key="S10" value="4.722811905631602" />
-      <entry key="S30" value="9.357945762827974" />
-      <entry key="S60" value="11.427663889361256" />
-      <entry key="M2" value="13.207818757080291" />
-      <entry key="M5" value="17.60952767316263" />
-      <entry key="M10" value="26.2869641080637" />
-      <entry key="M15" value="34.72440537053475" />
-      <entry key="M30" value="51.46210965368221" />
-      <entry key="H1" value="65.58325453841725" />
-      <entry key="H2" value="78.25333236064897" />
-      <entry key="H4" value="179.35649923636117" />
-      <entry key="D1" value="1738.8185652779503" />
-      <entry key="W1" value="2766.196237043323" />
+      <entry key="MS100" value="1.0000000002134706" />
+      <entry key="MS500" value="1.0203512237244359" />
+      <entry key="S2" value="1.8589631181922048" />
+      <entry key="S5" value="3.378664703431211" />
+      <entry key="S10" value="4.8495942217774495" />
+      <entry key="S30" value="7.909939878405126" />
+      <entry key="S60" value="11.631599723449208" />
+      <entry key="M2" value="17.655576302691635" />
+      <entry key="M5" value="26.240781594573413" />
+      <entry key="M10" value="31.525576295348227" />
+      <entry key="M15" value="34.41426201158326" />
+      <entry key="M30" value="43.26723137409996" />
+      <entry key="H1" value="73.28984872739372" />
+      <entry key="H2" value="142.793135409838" />
+      <entry key="H4" value="272.93363638077943" />
+      <entry key="D1" value="1809.4023978136138" />
+      <entry key="W1" value="3026.3143677730454" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="2.282871284578075E-16" />
-      <entry key="MS500" value="7.442113429393404E-4" />
-      <entry key="S2" value="0.16518923012140788" />
-      <entry key="S5" value="0.5060370010947941" />
-      <entry key="S10" value="0.8923377085848291" />
-      <entry key="S30" value="1.8045144308459948" />
-      <entry key="S60" value="2.308469390302367" />
-      <entry key="M2" value="2.858715438364642" />
-      <entry key="M5" value="4.971360062942795" />
-      <entry key="M10" value="8.202772409330322" />
-      <entry key="M15" value="10.31002024085036" />
-      <entry key="M30" value="13.399532002163296" />
-      <entry key="H1" value="15.467535049662144" />
-      <entry key="H2" value="16.66912974875264" />
-      <entry key="H4" value="17.317496723637934" />
-      <entry key="D1" value="17.88379735359911" />
-      <entry key="W1" value="17.98333847644133" />
+      <entry key="MS100" value="4.053173381225381E-41" />
+      <entry key="MS500" value="8.36951634126607E-9" />
+      <entry key="S2" value="0.011908015807663982" />
+      <entry key="S5" value="0.27368989045185366" />
+      <entry key="S10" value="0.8668457583700278" />
+      <entry key="S30" value="1.9627247459047965" />
+      <entry key="S60" value="2.5079294720063783" />
+      <entry key="M2" value="3.4863620179822847" />
+      <entry key="M5" value="7.6044265156853115" />
+      <entry key="M10" value="13.991275350002626" />
+      <entry key="M15" value="18.328513482818625" />
+      <entry key="M30" value="25.776329002967145" />
+      <entry key="H1" value="36.821516417067315" />
+      <entry key="H2" value="58.51664759803903" />
+      <entry key="H4" value="85.82695326801425" />
+      <entry key="D1" value="128.8463236123013" />
+      <entry key="W1" value="139.17235765005142" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.8645372313078652" />
-      <entry key="MS500" value="0.9717145796762513" />
-      <entry key="S2" value="1.2399129812431804" />
-      <entry key="S5" value="2.7189640709356104" />
-      <entry key="S10" value="5.510576354808728" />
-      <entry key="S30" value="11.090199102627833" />
-      <entry key="S60" value="13.690101420834683" />
-      <entry key="M2" value="16.039238920667394" />
-      <entry key="M5" value="22.56495284554604" />
-      <entry key="M10" value="34.47792514456235" />
-      <entry key="M15" value="45.02482418012025" />
-      <entry key="M30" value="64.85553372744394" />
-      <entry key="H1" value="81.04728485791074" />
-      <entry key="H2" value="94.92057529169129" />
-      <entry key="H4" value="196.6730003438961" />
-      <entry key="D1" value="1756.7021482906716" />
-      <entry key="W1" value="2784.179540697062" />
+      <entry key="MS100" value="0.5212328805477259" />
+      <entry key="MS500" value="0.8960480080947819" />
+      <entry key="S2" value="1.814439864731196" />
+      <entry key="S5" value="3.5959698515783503" />
+      <entry key="S10" value="5.658801314536701" />
+      <entry key="S30" value="9.833415189724814" />
+      <entry key="S60" value="14.11145270024262" />
+      <entry key="M2" value="21.1192895906963" />
+      <entry key="M5" value="33.82504559235575" />
+      <entry key="M10" value="45.49911345559703" />
+      <entry key="M15" value="52.72748706671313" />
+      <entry key="M30" value="69.03248046214176" />
+      <entry key="H1" value="110.10268906952653" />
+      <entry key="H2" value="201.30253204277184" />
+      <entry key="H4" value="358.7552393112332" />
+      <entry key="D1" value="1938.247357830199" />
+      <entry key="W1" value="3165.48651134878" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -126,6 +126,11 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;ml.llm.LLMConfigurable&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/img/ships/IJN/AIRCRAFT CARRIERS" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -149,7 +154,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Refactored navigation links and redesigned fleet list to nations-based layout with updated CSS styling." />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactored navigation links and redesigned fleet list to nations-based layout with updated CSS styling." />
+    <MESSAGE value="Added images in japan.html for all of the aircraft carriers. Will work on revamp of the Cruiser grid later, using Javascript breaks ability to use photos on the ship/class cards. Same will have to be done for the destroyer group, for now, I have left japan-destroyers.js intact." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added images in japan.html for all of the aircraft carriers. Will work on revamp of the Cruiser grid later, using Javascript breaks ability to use photos on the ship/class cards. Same will have to be done for the destroyer group, for now, I have left japan-destroyers.js intact." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
