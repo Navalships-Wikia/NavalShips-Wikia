@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="18786f2b-5a05-4652-9f0c-2c2fc61e0ac5" name="Changes" comment="Refactored navigation links and redesigned fleet list to nations-based layout with updated CSS styling.">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website pages/japan.html" beforeDir="false" afterPath="$PROJECT_DIR$/website pages/japan.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="306" />
+    <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Navalships-Wikia&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Navalships-Wikia/NavalShips-Wikia.git&quot;,
+    &quot;accountId&quot;: &quot;cb47b58b-1c89-4959-8b3b-d41f121d73a4&quot;
+  }
+}</component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.000024396519071" />
+      <entry key="S2" value="1.1337471424822954" />
+      <entry key="S5" value="2.3175068490896553" />
+      <entry key="S10" value="4.722811905631602" />
+      <entry key="S30" value="9.357945762827974" />
+      <entry key="S60" value="11.427663889361256" />
+      <entry key="M2" value="13.207818757080291" />
+      <entry key="M5" value="17.60952767316263" />
+      <entry key="M10" value="26.2869641080637" />
+      <entry key="M15" value="34.72440537053475" />
+      <entry key="M30" value="51.46210965368221" />
+      <entry key="H1" value="65.58325453841725" />
+      <entry key="H2" value="78.25333236064897" />
+      <entry key="H4" value="179.35649923636117" />
+      <entry key="D1" value="1738.8185652779503" />
+      <entry key="W1" value="2766.196237043323" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="2.282871284578075E-16" />
+      <entry key="MS500" value="7.442113429393404E-4" />
+      <entry key="S2" value="0.16518923012140788" />
+      <entry key="S5" value="0.5060370010947941" />
+      <entry key="S10" value="0.8923377085848291" />
+      <entry key="S30" value="1.8045144308459948" />
+      <entry key="S60" value="2.308469390302367" />
+      <entry key="M2" value="2.858715438364642" />
+      <entry key="M5" value="4.971360062942795" />
+      <entry key="M10" value="8.202772409330322" />
+      <entry key="M15" value="10.31002024085036" />
+      <entry key="M30" value="13.399532002163296" />
+      <entry key="H1" value="15.467535049662144" />
+      <entry key="H2" value="16.66912974875264" />
+      <entry key="H4" value="17.317496723637934" />
+      <entry key="D1" value="17.88379735359911" />
+      <entry key="W1" value="17.98333847644133" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.8645372313078652" />
+      <entry key="MS500" value="0.9717145796762513" />
+      <entry key="S2" value="1.2399129812431804" />
+      <entry key="S5" value="2.7189640709356104" />
+      <entry key="S10" value="5.510576354808728" />
+      <entry key="S30" value="11.090199102627833" />
+      <entry key="S60" value="13.690101420834683" />
+      <entry key="M2" value="16.039238920667394" />
+      <entry key="M5" value="22.56495284554604" />
+      <entry key="M10" value="34.47792514456235" />
+      <entry key="M15" value="45.02482418012025" />
+      <entry key="M30" value="64.85553372744394" />
+      <entry key="H1" value="81.04728485791074" />
+      <entry key="H2" value="94.92057529169129" />
+      <entry key="H4" value="196.6730003438961" />
+      <entry key="D1" value="1756.7021482906716" />
+      <entry key="W1" value="2784.179540697062" />
+    </decayedShown>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3HX4qntSggC4JxzZvsJpKfBDW51" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;ship-dev&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;ml.llm.LLMConfigurable&quot;
+  }
+}</component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-63390994e64e-intellij.indexing.shared.core-IU-262.8665.337" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.8665.337" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="18786f2b-5a05-4652-9f0c-2c2fc61e0ac5" name="Changes" comment="" />
+      <created>1786001273823</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1786001273823</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Refactored navigation links and redesigned fleet list to nations-based layout with updated CSS styling." />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored navigation links and redesigned fleet list to nations-based layout with updated CSS styling." />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
