@@ -150,110 +150,81 @@ main {
     display: block;
 }
 
-.armament-image {
+/* =========================================================
+   Standardized article image system
+   Use on any ship page:
+
+     <figure class="article-image float-left size-lg">
+       <img src="..." alt="...">
+       <figcaption>Caption text <span class="image-credit">Credit: ...</span></figcaption>
+     </figure>
+
+   Modifiers:
+     float-left / float-right      which side of the text the image sits on
+     size-sm / size-md / size-lg / size-wide   preset widths:
+       size-sm   min(32%, 260px)
+       size-md   min(36%, 300px)
+       size-lg   min(42%, 360px)
+       size-wide min(42%, 300px)
+   ========================================================= */
+
+.article-image {
+    margin: 0 0 12px;
+    text-align: center;
+}
+
+.article-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.article-image figcaption {
+    margin-top: 6px;
+    color: #666;
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+.article-image .image-credit {
+    display: block;
+    margin-top: 0;
+    color: #666;
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+/* New reusable modifiers */
+.article-image.float-left {
     float: left;
-    width: min(42%, 360px);
     margin: 0 20px 12px 0;
-    text-align: center;
 }
 
-.armament-image-right {
+.article-image.float-right {
     float: right;
-    width: min(36%, 300px);
     margin: 0 0 12px 20px;
 }
 
-.sensor-image {
-    float: right;
+.article-image.size-sm {
     width: min(32%, 260px);
-    margin: 0 0 12px 20px;
-    text-align: center;
 }
 
-.sensor-image img {
-    display: block;
-    width: 100%;
-    height: auto;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.article-image.size-md {
+    width: min(36%, 300px);
 }
 
-.sensor-image figcaption {
-    margin-top: 6px;
-    color: #666;
-    font-size: 0.9em;
-    line-height: 1.5;
-}
-
-.armament-image img {
-    display: block;
-    width: 100%;
-    height: auto;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.armament-image figcaption {
-    margin-top: 6px;
-    color: #666;
-    font-size: 0.9em;
-    line-height: 1.5;
-}
-
-.armament-image .image-credit,
-.sensor-image .image-credit {
-    display: block;
-    margin-top: 0;
-    color: #666;
-    font-size: 0.9em;
-    line-height: 1.5;
-}
-
-.history-image {
-    float: left;
+.article-image.size-lg {
     width: min(42%, 360px);
-    margin: 8px 20px 12px 0;
-    text-align: center;
 }
 
-.construction-image {
-    float: right;
-    margin: 8px 0 12px 20px;
-}
-
-.final-days-right-image {
-    float: right;
-    margin: 8px 0 12px 20px;
-}
-
-.after-war-right-image {
-    float: right;
-    margin: 8px 0 12px 20px;
-}
-
-.history-image img {
-    display: block;
-    width: 100%;
-    height: auto;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.history-image figcaption {
-    margin-top: 6px;
-    color: #666;
-    font-size: 0.9em;
-    line-height: 1.5;
-}
-
-.history-image .image-credit {
-    display: block;
-    margin-top: 0;
-    color: #666;
-    font-size: 0.9em;
-    line-height: 1.5;
+.article-image.size-wide {
+    width: min(42%, 300px);
 }
 
 .description-image-caption {
     margin: -0.8em 0 0;
-    margin-left: calc(min(42%, 360px) + 20px);
+    margin-left: calc(min(42%, 300px) + 20px);
     color: #666;
     font-size: 0.9em;
     line-height: 1.5;
@@ -580,24 +551,7 @@ table.ship-table tbody td:first-child {
         display: flow-root;
     }
 
-    .armament-image {
-        float: none;
-        width: 100%;
-        margin: 0 0 12px;
-    }
-
-    .armament-image-right {
-        float: none;
-        margin: 0 0 12px;
-    }
-
-    .sensor-image {
-        float: none;
-        width: 100%;
-        margin: 0 0 12px;
-    }
-
-    .history-image {
+    .article-image {
         float: none;
         width: 100%;
         margin: 0 0 12px;
@@ -606,10 +560,6 @@ table.ship-table tbody td:first-child {
     .description-image-caption {
         margin-top: 6px;
         margin-left: 0;
-    }
-
-    .armament-image img {
-        height: auto;
     }
 
     .content-container {
@@ -659,7 +609,7 @@ table.ship-table tbody td:first-child {
         text-align: left;
     }
 
-    .armament-image {
+    .article-image {
         width: 100%;
     }
 }
